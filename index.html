@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDB Web Studio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./static/img/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Agrega SweetAlert2 JS y tu propio JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img
+      id="loguito_jugueton"
+      src="/static/img/logo_click_me.png"
+      alt="Logo DDB Web Studio"
+    />
+    <header class="header">
+      <div id="div_titulo_main">
+        <a href="./index.html">
+          <img
+            id="main_logo"
+            src="/static/img/logo.png"
+            alt="Logo DDB Web Studio"
+          />
+        </a>
+      </div>
+      <div class="menusito-toggle">
+        <div class="menusito-icon">
+          <span class="menusito-line"></span>
+          <span class="menusito-line"></span>
+          <span class="menusito-line"></span>
+        </div>
+        <div class="close-icon"></div>
+      </div>
+      <nav class="navsito">
+        <ul class="navsito__list">
+          <li class="navsito__item">
+            <a class="navsito__link" href="./index.html">Home</a>
+          </li>
+          <li class="navsito__item">
+            <a class="navsito__link" href="./views/conoceme.html">Conóceme</a>
+          </li>
+          <li class="navsito__item">
+            <a class="navsito__link" href="./views/servicios.html">Servicios</a>
+          </li>
+          <li class="navsito__item">
+            <a class="navsito__link" href="./views/portafolio_apps.html"
+              >Portafolio</a
+            >
+          </li>
+          <li class="navsito__item">
+            <a class="navsito__link" href="./views/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div id="parrafo_inicial_1" class="texto1">
+        <p class="texto1__parrafo">
+          Impulsando tu presencia en línea y construyendo experiencias digitales
+          excepcionales
+        </p>
+      </div>
+      <div id="carrucelito_index" class="imagen-container">
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="1000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/static/img/carru1.jpg"
+                class="d-block w-100"
+                alt="Imagen 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/static/img/carru2.jpg"
+                class="d-block w-100"
+                alt="Imagen 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/static/img/carru3.jpg"
+                class="d-block w-100"
+                alt="Imagen 3"
+              />
+            </div>
+          </div>
+        </div>
+        <video
+          id="myVideo2"
+          alt="Imagen Oculta"
+          class="imagen2_laptops"
+          autoplay
+        >
+          <source src="./static/img/imagen1.mp4" type="video/mp4" />
+          Tu navegador no admite el elemento de video.
+        </video>
+        <!-- <img
+          src="/static/img/imagen2.jpg"
+          alt="Imagen Oculta"
+          class="imagen2_laptops"
+        /> -->
+      </div>
+      <div id="parrafo_inicial_2" class="texto2">
+        <p class="texto2__parrafo">
+          Desarrollo web a medida y aplicaciones innovadoras para impulsar tu
+          negocio, servicios integrales y mejoras frontend/backend de vanguardia
+        </p>
+      </div>
+      <img src="/static/img/imagen2.jpg" alt="Imagen 2" class="imagen2" />
+    </div>
+
+    <!-- DIV con 3 PARRAFOS -->
+    <div class="container2">
+      <div class="paragraph" id="parrafo1">
+        <img
+          src="/static/img/chip_2.png"
+          alt="Imagen 1"
+          class="paragraph__image"
+          id="imagen1_parrafo1"
+        />
+        <img
+          src="/static/img/chip_1.png"
+          alt="Imagen 1"
+          class="paragraph__image paragraph__image_oculto"
+          id="imagen2_parrafo1"
+        />
+        <h3 class="paragraph__title">
+          Transformando ideas en realidad digital
+        </h3>
+        <p class="paragraph__text">
+          Desarrollo web personalizado y creación de aplicaciones para potenciar
+          tu presencia en línea
+        </p>
+      </div>
+      <div class="paragraph" id="parrafo2">
+        <img
+          src="/static/img/tecnologia_2.png"
+          alt="Imagen 2"
+          class="paragraph__image"
+          id="imagen1_parrafo2"
+        />
+        <img
+          src="/static/img/tecnologia_1.png"
+          alt="Imagen 2"
+          class="paragraph__image paragraph__image_oculto"
+          id="imagen2_parrafo2"
+        />
+        <h3 class="paragraph__title">Tu éxito en la web, nuestra pasión</h3>
+        <p class="paragraph__text">
+          Desarrollo web profesional, servicios completos y mejoras de última
+          generación
+        </p>
+      </div>
+      <div class="paragraph" id="parrafo3">
+        <img
+          src="/static/img/computadora_2.png"
+          alt="Imagen 3"
+          class="paragraph__image"
+          id="imagen1_parrafo3"
+        />
+        <img
+          src="/static/img/computadora_1.png"
+          alt="Imagen 3"
+          class="paragraph__image paragraph__image_oculto"
+          id="imagen2_parrafo3"
+        />
+        <h3 class="paragraph__title">Soluciones integrales</h3>
+        <p class="paragraph__text">
+          Somos expertos en el desarrollo web y la creación de apps adaptadas a
+          tus necesidades
+        </p>
+      </div>
+    </div>
+    <!-- Parrafo con imagen intermedio -->
+    <div class="content-center">
+      <div class="text-container-left">
+        <h2 class="text-container-left__title">
+          <strong>Convierte tus ideas en acción con un click</strong>
+        </h2>
+        <p id="p_conviert_ideas_index" class="text-container-left__description">
+          En DDB Web Studio, nos dedicamos apasionadamente a transformar ideas
+          en soluciones digitales innovadoras. Nuestro enfoque se centra en el
+          desarrollo web personalizado y la creación de aplicaciones que se
+          adaptan a las necesidades únicas de nuestros clientes.
+        </p>
+      </div>
+      <div class="image-container-right">
+        <video id="myVideo" autoplay>
+          <source
+            src="./static/img/video_ideas_en_accion.mp4"
+            type="video/mp4"
+          />
+          Tu navegador no admite el elemento de video.
+        </video>
+      </div>
+    </div>
+
+    <!-- Parrafo -->
+    <div class="outer-container">
+      <div class="inner-container">
+        <p id="p_conviert_ideas_index_2">
+          Con un enfoque meticuloso en el diseño y la funcionalidad, trabajamos
+          para proporcionar experiencias digitales atractivas y funcionales.
+          Desde la creación de sitios web personalizados que reflejen la
+          identidad de tu marca hasta el desarrollo de aplicaciones de
+          vanguardia que impulsen la interacción con tus clientes, nuestro
+          objetivo es ayudarte a alcanzar el éxito en línea.
+        </p>
+      </div>
+    </div>
+
+    <!-- EN RESUMEN -->
+    <div class="main-container">
+      <p class="main-container__text">
+        Transformamos ideas en soluciones digitales exitosas.
+      </p>
+      <div id="div_principal_en_resumen" class="div_principal_en_resumen">
+        <div class="main-container__image-container">
+          <div id="menu_1" class="main-container__image-section">
+            <a href="/views/conoceme.html">
+              <img src="/static/img/conoceme.jpg" alt="Imagen 1" />
+            </a>
+            <h3 class="main-container__image-section-title">Conóceme</h3>
+          </div>
+          <div id="menu_2" class="main-container__image-section">
+            <a href="/views/servicios.html">
+              <img src="/static/img/servicios.jpg" alt="Imagen 2" />
+            </a>
+            <h3 class="main-container__image-section-title">Servicios</h3>
+          </div>
+        </div>
+
+        <div class="main-container__image-container">
+          <div id="menu_3" class="main-container__image-section">
+            <a href="/views/portafolio_apps.html">
+              <img src="/static/img/port_apps_3.png" alt="Imagen 3" />
+            </a>
+            <h3 class="main-container__image-section-title">Portafolio</h3>
+          </div>
+          <div id="menu_4" class="main-container__image-section">
+            <a href="/views/contacto.html">
+              <img src="/static/img/contacto.jpg" alt="Imagen 4" />
+            </a>
+            <h3 class="main-container__image-section-title">Contacto</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UNETE a MI LISTA-->
+    <div class="main-containers">
+      <div class="main-containers__left-container">
+        <h2 class="main-containers__left-title">DDB Web Studio</h2>
+        <p class="main-containers__left-paragraph">
+          Únete a mi lista y recibirás sorpresas súper cool. Tips, noticias y
+          más.
+        </p>
+      </div>
+      <div class="main-containers__right-container">
+        <h2 class="main-containers__right-title">ÚNETE A MI LISTA</h2>
+        <form class="main-containers__right-form" method="POST">
+          <input
+            type="email"
+            class="main-containers__right-input"
+            placeholder="Email Address"
+          />
+          <input
+            type="name"
+            class="main-containers__right-input"
+            placeholder="Full name"
+          />
+          <button type="submit" class="main-containers__right-button" disabled>
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__social-icons">
+          <a
+            class="footer__social-icon"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/static/img/ig.png" alt="Instagram" />
+          </a>
+          <a
+            class="footer__social-icon"
+            href="https://es-la.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/static/img/facebook.png" alt="Facebook" />
+          </a>
+          <a
+            class="footer__social-icon"
+            href="https://cl.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/static/img/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a class="footer__social-icon" href="mailto:correo@example.com">
+            <img src="/static/img/email.png" alt="Correo Electrónico" />
+          </a>
+        </div>
+        <p class="footer__text">
+          Santiago de Chile, © 2023 All rights reserved. DDB Web Studio.
+          Designed by DDB Web Studio
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="/js/style.js"></script>

@@ -1,0 +1,1902 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/****************  DISPOSITIVOS MOVILES ***************/
+@media (max-width: 320px) {
+  .carousel-inner {
+    max-height: 250px;
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+body {
+  position: relative;
+  overflow: auto;
+}
+#loguito_jugueton{
+  position: fixed;
+  width: 15%;
+  margin: 5% 6% 1% 4%;
+  filter: brightness(0%);
+  display: none;
+}
+/* HEADER MOVIL */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6% 6% 3% 4%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+}
+#main_logo{
+  width: 75%;
+  margin: 0% 2% 4% -2%;
+  max-height: 100px;
+  transition: max-height 0.3s ease;
+}
+.header:hover #main_logo {
+  max-height: 150px; 
+}
+#div_titulo_main{
+  display: inline; 
+  align-items: center;
+}
+.menusito-toggle {
+  margin-left: auto;
+  cursor: pointer;
+  margin-top: -15%;
+}
+
+/*******************************/
+.menusito-icon {
+  width: 25px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menusito-line {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+}
+/********************************/
+
+.navsito {
+  display: none;
+  margin-top: 6%;
+  border-top: 1px solid #fcfcfc;
+  margin-left: 2%;
+}
+
+.navsito__list {
+  list-style: none;
+  padding: 0;
+}
+
+.navsito__item {
+  margin-bottom: 8%;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.navsito__link {
+  text-decoration: none;
+  color: #f8f5f5;
+  font-size: 1.3rem;
+}
+
+  /* Estilos del menú desplegado */
+.navsito--active {
+  display: block;
+}
+
+.menusito-line--active:nth-child(1) {
+  background-color: #45ece4;
+  transform: rotate(90deg) translate(13px, 0px);
+}
+
+
+/* DIV INICIAL INDEX MOVIL */
+.container {
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto2 {
+  width: 100%;
+  text-align: center;
+  margin: 8%;
+}
+.texto1{
+  width: 100%;
+  text-align: center;
+  margin: 27% 8% 8% 8%;   
+}
+.texto1__parrafo{
+  margin-top: 4%;
+}
+.texto1__parrafo,
+.texto2__parrafo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.imagen1 {
+  width: 95%;
+  max-width: 320px;
+  border-radius: 20px;
+  /* Estilos normales */
+  filter: opacity(1);
+  transition: filter 0.8s ease;
+}
+
+.imagen1:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+}
+
+.imagen2 {
+  display: none;
+}
+.imagen2_laptops{
+display: none;
+}
+.imagen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* IMG SEGUIDO DE PARRAFO INFO INDEX  MOVIL */
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.paragraph {
+  width: 95%;
+  text-align: center;
+  margin-bottom: 30px; 
+  border: 1px solid #ccc;
+  padding-top: 10px;
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  border-radius: 20px;
+}
+
+.paragraph__image {
+  margin-top: 1%;
+  margin-bottom: 5%; 
+  width: 20%;
+  filter: grayscale(100%);
+}
+
+.paragraph__image_oculto {
+  display: none;
+}
+
+.paragraph__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+}
+
+.paragraph__text {
+  margin-top: 5%;
+  font-size: 1rem;
+  font-family: Lucida Console;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+/* Texto e imagen intermedio: Convierte tus ideas en acción con un click INDEX  MOVIL */
+
+.content-center {
+  border-top: 10px double #ccc;
+  padding-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container-left {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15%;
+}
+
+.text-container-left__title {
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 5%;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-container-left__description {
+  margin: 5% 5% 5% 5%; 
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.image-container-right {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  /* Estilos normales */
+  filter: opacity(1);
+  transition: filter 0.8s ease;
+}
+
+.image-container-right:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+}
+
+.image-container-right video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border-style: groove;
+}
+
+/* Parrafo informativo index MOVIL */
+.outer-container {
+  display: flex;
+}
+
+.inner-container {
+  width: 90%;
+  text-align: justify;
+  border-radius: 20px;
+  margin: 5% 5% 5% 5%; 
+}
+
+.inner-container p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  padding: 4%;
+}
+
+/* EN RESUMEN - INDEX MOVIL */
+.main-container {
+  text-align: center;
+  margin: auto;
+  width: 95%;
+  padding: 2%;
+  margin-bottom: 10%;
+  border: 0.01rem inset rgb(153, 153, 153);
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  border-radius: 20px;
+}
+
+.main-container__text {
+  margin-top: 5%;
+  margin-bottom: 8%;
+  font-family:  Lucida Console;
+  font-size: 1rem;
+}
+
+.main-container__image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 2%;
+}
+
+.main-container__image-section {
+  width: 45%;
+}
+
+.main-container__image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  /* Estilos normales */
+  filter: grayscale(100%);
+  transition: filter 0.8s ease;
+}
+
+.main-container__image-section img:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+  
+}
+
+.main-container__image-section-title {
+  font-size: 1.2rem;
+  margin-top: 5%;
+  font-family:  'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+/* UNETE A MI LISTA MOVIL */
+
+.main-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-containers__left-container,
+.main-containers__right-container {
+  flex-basis: 95%;
+  margin-bottom: 7%;
+  border: 0.01rem inset rgb(153, 153, 153);
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.main-containers__left-container {
+  padding: 5%;
+}
+
+.main-containers__right-container {
+  padding: 2%;
+  font-size: 1.3rem;
+}
+
+.main-containers__sweet_alert {
+  flex-basis: 90%;
+  margin-bottom: 7%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 20px;
+}
+
+.main-containers__left-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family:  'Roboto', sans-serif;
+}
+
+.main-containers__left-paragraph {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family:  'Roboto', sans-serif;
+}
+
+.main-containers__right-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family:  'Roboto', sans-serif;
+  margin-bottom: 5%;
+  
+}
+
+.main-containers__right-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.main-containers__right-input {
+  margin-bottom: 2%;
+  padding: 5px;
+  border: dotted 1px rgb(157, 155, 155);
+  border-radius: 5px;
+}
+
+.main-containers__right-button {
+  padding: 1%;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+/****** FOOTER MOVIL ****/
+.footer {
+  text-align: center;
+  padding: 2%;
+  font-size: 0.7rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer__social-icon {
+  margin: 0 0.5rem;
+}
+
+.footer__social-icon img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.footer__text {
+  margin-top: 1rem;
+}
+/*************************************** ************** ********************************/
+/*************************************** CONOCEME MOVIL ********************************/
+.page-container {
+  text-align: center;
+}
+
+.page-conoceme {
+  padding-top: 25%;
+}
+
+.page-conoceme__title {
+  padding:2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.page-conoceme__image {
+  width: 75%;
+  height: auto;
+  border-radius: 20px;
+  margin: 5% auto;
+  border-style: groove;
+}
+
+.page-conoceme__text {
+  text-indent: 20px;
+  color: #333;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  padding-top: 6%;
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.page-conoceme__firma-desarrollador-image {
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+
+/*************************************** SERVICIOS MOVIL ********************************/
+#titulo_servicios {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  padding-top: 28%;
+}
+
+.servicios-wrapper {
+  margin-top: 5%;
+}
+
+.servicio {
+  margin-bottom: 10%;
+  text-align: center;
+  padding-top: 4%;
+  border-top: 5px double #2e2828;
+}
+
+.servicio h2 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.servicio-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicio-text {
+  font-family: 'Roboto', sans-serif;
+  text-indent: 2em;
+  font-size: 0.8rem;
+  text-align: justify;
+  margin: 6% 0;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 5%;
+}
+.div_botones_servicios {
+  text-align: center;
+}
+.servicio-img {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.servicio-img img {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+}
+
+.servicio-img img:hover + .caption {
+  opacity: 1;
+}
+.servicio-img img:hover {
+  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(180deg);
+}
+.caption {
+  position: absolute;
+  padding-bottom: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:white;
+}
+/* CONTACTO */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.contacto-principal {
+  text-align: center;
+}
+
+.contacto-principal__titulo {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+}
+
+.contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.contacto-formulario__input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.contacto-formulario__textarea {
+  width: 100%;
+  height: 150px;
+}
+
+.contacto-formulario__boton {
+  padding: 10px 20px;
+  background-color: #95a8e7;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+}
+
+/****************  DISPOSITIVOS TABLETS ***************/
+@media (min-width: 321px) and (max-width: 767px) {
+/* Aquí se especifican las reglas de estilo para pantallas entre 320px y 768px */
+/* HEADER TABLET */
+.carousel-inner {
+  max-height: 300px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+body {
+position: relative;
+overflow: auto;
+}
+#loguito_jugueton{
+position: fixed;
+width: 15%;
+margin: 5% 6% 1% 4%;
+filter: brightness(0%);
+display: none;
+}
+/* HEADER TABLET */
+.header {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 6% 6% 8% 4%;
+/*background-color: #f0f0f0;*/
+background-color: rgba(0, 0, 0, 0.9);
+position: fixed;
+z-index: 9999;
+width: 100%;
+}
+#main_logo{
+width: 65%;
+margin: 0% 2% 1% 2%;
+padding-bottom: 3%;
+max-height: 100px;
+transition: max-height 0.3s ease;
+}
+.header:hover #main_logo {
+  max-height: 150px; 
+}
+#div_titulo_main{
+display: inline; 
+align-items: center;
+}
+.menusito-toggle {
+margin-left: auto;
+cursor: pointer;
+margin-top: -15%;
+}
+
+/*******************************/
+.menusito-icon {
+width: 25px;
+height: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.menusito-line {
+width: 100%;
+height: 3px;
+background-color: #ffffff;
+}
+/********************************/
+
+.navsito {
+display: none;
+margin-top: 6%;
+border-top: 1px solid #fcfcfc;
+margin-left: 2%;
+}
+
+.navsito__list {
+list-style: none;
+padding: 0;
+}
+
+.navsito__item {
+margin-bottom: 8%;
+margin-top: 15%;
+margin-left: 10%;
+}
+
+.navsito__link {
+text-decoration: none;
+color: #f8f5f5;
+font-size: 1.3rem;
+}
+
+/* Estilos del menú desplegado */
+.navsito--active {
+display: block;
+}
+
+.menusito-line--active:nth-child(1) {
+background-color: #45ece4;
+transform: rotate(90deg) translate(13px, 0px);
+}
+/* DIV INICIAL INDEX TABLET */
+.container {
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto2 {
+  width: 100%;
+  text-align: center;
+  margin: 8% 8% 8% 8%; 
+}
+
+.texto1 {
+  width: 100%;
+  text-align: center;
+  margin: 20% 8% 8% 8%; 
+}
+.texto1__parrafo{
+  margin-top: 8%;
+}
+.texto1__parrafo,
+.texto2__parrafo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.imagen1 {
+  width: 80%;
+  max-width: 320px;
+  /* Estilos normales */
+  filter: opacity(1);
+  transition: filter 0.8s ease;
+}
+
+.imagen1:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+}
+
+.imagen2 {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  /* Estilos normales */
+  filter: opacity(1);
+  transition: filter 0.8s ease;
+}
+
+.imagen2:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+}
+
+.imagen2_laptops{
+  display: none;
+  }
+
+.imagen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* IMG SEGUIDO DE PARRAFO INFO INDEX  TABLET */
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.paragraph {
+  width: 95%;
+  text-align: center;
+  margin-bottom: 30px; 
+  border: 1px solid #ccc;
+  padding-top: 10px;
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  border-radius: 20px;
+}
+
+.paragraph__image {
+  margin-top: 1%;
+  margin-bottom: 5%; 
+  width: 20%;
+  filter: grayscale(100%);
+}
+
+.paragraph__image_oculto {
+  display: none;
+}
+.paragraph__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.paragraph__text {
+  margin-top: 5%;
+  font-size: 1.3rem;
+  font-family: Lucida Console;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Texto e imagen intermedio: Convierte tus ideas en acción con un click INDEX  TABLET */
+.content-center {
+  border-top: 10px double #ccc;
+  padding-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container-left {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15%;
+}
+
+.text-container-left__title {
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-container-left__description {
+  margin: 5% 5% 0 5%; 
+  font-size: 1.3rem;
+  font-family: Lucida Console;
+  text-align: justify;
+}
+
+.image-container-right {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  /* Estilos normales */
+  filter: opacity(1);
+  transition: filter 0.8s ease;
+}
+
+.image-container-right:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+}
+
+.image-container-right video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border-style: groove;
+}
+
+/* Parrafo informativo index TABLET */
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.inner-container {
+  width: 90%;
+  text-align: justify;
+  border-radius: 20px;
+  margin: 5% 5% 0 5%; 
+}
+
+.inner-container p {
+  font-size: 1.3rem;
+  color: black;
+  font-family: Lucida Console;
+  padding: 4%;
+}
+
+/* EN RESUMEN - INDEX TABLET */
+.main-container {
+  width: 95%;
+  padding: 2%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10%;
+  border: 0.01rem inset rgb(153, 153, 153);
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  border-radius: 20px;
+}
+
+.main-container__text {
+  margin-top: 5%;
+  margin-bottom: 8%;
+  font-family:  Lucida Console;
+  font-size: 1.3rem;
+}
+
+.main-container__image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 2%;
+}
+
+.main-container__image-section {
+  width: 45%;
+}
+
+.main-container__image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  /* Estilos normales */
+  filter: grayscale(100%);
+  transition: filter 0.8s ease;
+}
+
+.main-container__image-section img:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+  
+}
+
+.main-container__image-section-title {
+  font-size: 1.2rem;
+  margin-top: 5%;
+  font-family:  'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+/* UNETE A MI LISTA TABLET */
+
+.main-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-containers__left-container,
+.main-containers__right-container {
+  flex-basis: 95%;
+  margin-bottom: 7%;
+  border: 0.01rem inset rgb(153, 153, 153);
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.main-containers__left-container {
+  padding: 5%;
+}
+
+
+.main-containers__right-container {
+  padding: 10%;
+  font-size: 1.1rem;
+}
+
+.main-containers__sweet_alert {
+  flex-basis: 90%;
+  margin-bottom: 7%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 20px;
+}
+
+
+.main-containers__left-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family:  'Roboto', sans-serif;
+}
+
+.main-containers__left-paragraph {
+  margin-top: 5%;
+  text-align: center;
+  font-family:  Lucida Console;
+  font-size: 1.2rem;
+}
+
+.main-containers__right-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family:  'Roboto', sans-serif;
+  margin-bottom: 5%;
+  
+}
+
+.main-containers__right-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.main-containers__right-input {
+  margin-bottom: 2%;
+  padding: 5px;
+  border: dotted 1px rgb(157, 155, 155);
+  border-radius: 5px;
+}
+
+.main-containers__right-button {
+  padding: 1%;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+/****** FOOTER TABLET ****/
+.footer {
+  text-align: center;
+  padding: 2%;
+  font-size: 1.1rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer__social-icon {
+  margin: 0 0.5rem;
+}
+
+.footer__social-icon img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.footer__text {
+  margin-top: 1rem;
+}
+/*************************************** ************** ********************************/
+/*************************************** CONOCEME TABLET ********************************/
+.page-container {
+  text-align: center;
+}
+
+.page-conoceme {
+  padding: 25% 3% 0% 3%;
+}
+
+.page-conoceme__title {
+  padding:2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.page-conoceme__image {
+  width: 75%;
+  height: auto;
+  border-radius: 20px;
+  margin: 5% auto;
+  border-style: groove;
+}
+
+.page-conoceme__text {
+  text-indent: 20px;
+  color: #333;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  padding-top: 6%;
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.page-conoceme__firma-desarrollador-image {
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+/*************************************** SERVICIOS TABLET ********************************/
+#titulo_servicios {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  padding-top: 28%;
+}
+
+.servicios-wrapper {
+  margin-top: 5%;
+}
+
+.servicio {
+  margin-bottom: 10%;
+  text-align: center;
+  padding-top: 4%;
+  border-top: 5px double #2e2828;
+}
+
+.servicio h2 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.servicio-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicio-text {
+  font-family: 'Roboto', sans-serif;
+  text-indent: 2em;
+  font-size: 0.8rem;
+  text-align: justify;
+  margin: 6% 0;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 5%;
+}
+.div_botones_servicios{
+  text-align: center;
+}
+.servicio-img {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.servicio-img img {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+}
+
+.servicio-img img:hover + .caption {
+  opacity: 1;
+}
+.servicio-img img:hover {
+  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(180deg);
+}
+.caption {
+  position: absolute;
+  padding-bottom: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:white;
+}
+/* CONTACTO */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.contacto-principal {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.contacto-principal__titulo {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+}
+
+.contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.contacto-formulario__input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.contacto-formulario__textarea {
+  width: 100%;
+  height: 150px;
+}
+
+.contacto-formulario__boton {
+  padding: 10px 20px;
+  background-color: #95a8e7;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+}
+
+/****************  DISPOSITIVOS PORTATILES LAPTOPS ***************/
+@media (min-width: 768px) {
+/* Aquí se especifican las reglas de estilo para pantallas superiores a 1200px */
+/* HEADER LAPTOPS */
+body {
+  position: relative;
+  overflow: auto
+}
+#loguito_jugueton{
+  position: fixed;
+  width: 6%;
+  margin: 5% 6% 1% 4%;
+  filter: brightness(0%);
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+}
+
+#main_logo{
+  width: 100%;
+  margin: 0% 5% 1% 0%;
+  padding: 5%;
+  max-height: 100px;
+  transition: max-height 0.3s ease;
+}
+.header:hover #main_logo {
+  max-height: 110px; 
+}
+
+.header__title {
+  font-size: 3rem;
+  color:white;
+}
+a {
+  text-decoration: none; 
+  color: inherit;
+}
+#div_titulo_main{
+  display: flex; 
+  align-items: center;
+}
+
+.navsito {
+  display: flex;
+  align-items: center; 
+  margin-right: 15%; 
+}
+
+.navsito__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-right: 0;
+}
+
+.navsito__item {
+  margin-left: 7%; 
+}
+
+.navsito__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.menusito-toggle {
+  display: none;
+}
+
+.menusito-icon {
+  display: none;
+}
+
+/********************************/
+
+/* Estilos del menú desplegado */
+.navsito--active {
+  display: block;
+}
+
+.menusito-line--active:nth-child(1) {
+  background-color: #45ece4;
+  transform: rotate(90deg) translate(13px, 0px);
+}
+
+
+/* DIV INICIAL INDEX LAPTOPS */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto1 {
+  width: 100%;
+  text-align: center;
+  margin: 15% 8% 2% 8%; 
+}
+
+.texto2 {
+  width: 100%;
+  text-align: center;
+  margin: 3% 8% 0% 8%; 
+}
+
+.texto1__parrafo,
+.texto2__parrafo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.imagen1 {
+  width: 50%;
+  max-width: 320px;
+  border-radius: 20px;
+  border-style: groove;
+  margin-left:5%;
+  margin-right:5%;
+  /* Estilos normales */
+  filter: opacity(1);
+  transition: filter 0.8s ease;
+}
+
+.imagen1:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+}
+
+.imagen2 {
+  display: none;
+}
+
+.imagen-container {
+display: flex;
+align-items: stretch;
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#carouselExample{
+  width: 50%;
+}
+.imagen2_laptops{
+  margin-left:5%;
+  display: block;
+  /* Estilos normales */
+  filter: opacity(1);
+  transition: filter 0.8s ease;
+  width: 60%;
+  border-radius: 20px;
+}
+
+.imagen2_laptops:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+}
+/* IMG SEGUIDO DE PARRAFO INFO INDEX  LAPTOPS */
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-right: 6%;
+}
+
+.paragraph {
+  text-align: center;
+  margin-bottom: 30px; 
+  flex: 0 0 25%;
+  margin-left: 7%;
+  border: 1px solid #ccc;
+  padding-top: 10px;
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  border-radius: 20px;
+  height: 350px;
+}
+
+.paragraph__image {
+  margin-top: 1%;
+  margin-bottom: 5%; 
+  width: 20%;
+  filter: grayscale(100%);
+}
+
+.paragraph__image_oculto {
+  display: none;
+}
+.paragraph__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}
+
+.paragraph__text {
+  margin-top: 5%;
+  font-size: 1.1rem;
+  font-family: Lucida Console;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Texto e imagen intermedio: Convierte tus ideas en acción con un click INDEX  LAPTOPS */
+.content-center {
+  border-top: 10px double #ccc;
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container-left {
+  flex: 1;
+  text-align: center;
+  width: 50%;
+  margin-left: 5%;
+}
+
+.text-container-left__title {
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 5%;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-container-left__description {
+  margin: 5% 5% 0 5%;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+}
+
+.image-container-right {
+  flex: 1;
+  text-align: center;
+  width: 50%;
+  margin-right: 5%;
+  /* Estilos normales */
+  filter: opacity(1);
+  transition: filter 0.8s ease;
+}
+
+.image-container-right:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+}
+
+.image-container-right video {
+  width: 65%;
+  height: auto;
+  border-radius: 20px;
+  border-style: groove;
+}
+
+/* Parrafo informativo index LAPTOPS */
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.inner-container {
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+  margin: 2% 5% 0 5%; 
+}
+
+.inner-container p {
+  font-size: 1.2rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  padding:0 4% 4% 4%;
+}
+/* EN RESUMEN - INDEX LAPTOPS */
+.main-container {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 5%;
+  padding:3%;
+  border: 0.01rem double rgb(153, 153, 153);
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  border-radius: 20px;
+}
+
+.main-container__text {
+  font-family:  Lucida Console;
+  font-size: 1.2rem;
+}
+
+.main-container__image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 2%;
+  margin-left: 5%;
+}
+
+.main-container__image-section {
+  width: 45%;
+}
+
+.main-container__image-section img {
+  width: 100%;
+  border-radius: 10px;
+  /* Estilos normales */
+  filter: grayscale(100%);
+  transition: filter 0.8s ease;
+}
+
+.main-container__image-section img:hover {
+  /* Estilos al hacer hover */
+  filter: opacity(0.5);
+  
+}
+
+.main-container__image-section-title {
+  font-size: 1.4rem;
+  margin-top: 5%;
+  font-family:  'Roboto', sans-serif;
+}
+.div_principal_en_resumen {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* UNETE A MI LISTA LAPTOPS */
+.main-containers {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.main-containers__left-container,
+.main-containers__right-container {
+  flex-basis: 40%;
+  margin-bottom: 3%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white;
+  border-radius: 20px;
+
+}
+
+.main-containers__left-container {
+  padding: 2% 2% 11% 2%;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 300px;
+}
+
+.main-containers__right-container {
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 300px;
+  padding: 2% 2% 11% 2%;
+}
+.main-containers__sweet_alert {
+  flex-basis: 90%;
+  margin-bottom: 7%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 20px;
+}
+.main-containers__left-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-containers__left-paragraph {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-containers__right-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5%;
+}
+
+.main-containers__right-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.main-containers__right-input {
+  margin-bottom: 2%;
+  padding: 5px;
+  border: dotted 1px rgb(157, 155, 155);
+  border-radius: 5px;
+}
+
+.main-containers__right-button {
+  padding: 1%;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1%;
+}
+
+
+/****** FOOTER LAPTOPS ****/
+.footer {
+  text-align: center;
+  padding: 2%;
+  font-size: 0.7rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer__social-icon {
+  margin: 0 0.5rem;
+}
+
+.footer__social-icon img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer__text {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+/*************************************** ************** ********************************/
+/*************************************** CONOCEME LAPTOPS ********************************/
+.page-container {
+  text-align: center;
+}
+
+.page-conoceme {
+  padding-top: 8%;
+}
+
+.page-conoceme__title {
+  padding: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.page-conoceme-img-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.page-conoceme__image {
+  width: 45%;
+  height: auto;
+  border-radius: 20px;
+  border-style: groove;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.page-conoceme__text {
+  width: 40%;
+  text-align: justify;
+  text-indent: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.page-conoceme__firma-desarrollador-image {
+  width: 25%;
+  margin-left: 60%;
+}
+/*************************************** SERVICIOS LAPTOPS ********************************/
+#titulo_servicios {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  padding-top: 9%;
+}
+
+.servicio {
+  text-align: center;
+  padding-top: 2%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  border-top: 4px double #ccc;
+}
+
+.servicio h2{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.servicio-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicio-content:nth-child(even) .servicio-text {
+  order: 2;
+}
+
+.servicio-content:nth-child(even) .servicio-img {
+  order: 1;
+}
+
+.servicio-text {
+  flex: 0 0 45%;
+  font-family: 'Roboto', sans-serif;
+  text-indent: 2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-top: 5%;
+  padding-right: 6%;
+  padding-bottom: 5%;
+}
+
+.servicio-img {
+  flex: 0 0 45%;
+  text-align: center;
+  margin-left: 5%;
+  position: relative;
+  display: inline-block;
+}
+
+.servicio-img img {
+  width: 70%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  margin-top: 9%;
+}
+
+.servicio-img img:hover + .caption {
+  opacity: 1;
+}
+.servicio-img img:hover {
+  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(180deg);
+}
+.caption {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:white;
+}
+/* CONTACTO */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  width: 100%;
+  margin-bottom: -7%;
+}
+
+.contacto-principal__titulo{
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+.contacto-principal {
+  text-align: center;
+  margin-bottom: 5%;
+  width: 100%; 
+}
+
+.contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; 
+  width: 80%; 
+  max-width: 400px; 
+
+}
+
+.contacto-formulario__input,
+.contacto-formulario__textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-sizing: border-box; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+}
+
+.contacto-formulario__boton {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #95a8e7;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+}
