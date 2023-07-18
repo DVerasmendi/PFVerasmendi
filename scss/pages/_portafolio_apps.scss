@@ -1,0 +1,407 @@
+// Variables generales
+$font_family_roboto: 'Roboto', sans-serif;
+$font_family_lucida: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+// VERSION MOBILE //
+@media (max-width: 320px) {
+.portafolio-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23%;
+    margin-bottom: 5%;
+}
+.portafolio-apps__intro {
+    font-family: $font_family_roboto;
+    text-indent: 2em;
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 8%;
+}
+.portafolio-apps__titulo-port-apps {
+    text-align: center;
+    font-family: $font_family_lucida;
+    font-size: 1.1rem;
+    padding-top: 6%;
+    margin-bottom: 5%;
+}
+.portafolio-apps__app {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 6%;
+    box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+}
+.portafolio-apps__app-info {
+    flex: 1;
+    margin-bottom: 2%;
+    padding: 5%;
+}
+.portafolio-apps__app-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 2%;
+}
+.portafolio-apps__app-titulo {
+    margin-top: 0;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: $font_family_lucida;
+    font-size: 1.1rem;
+}
+.portafolio-apps__app-texto {
+    margin-top: 0;
+    font-family: $font_family_roboto;
+    text-indent: 2em;
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+.portafolio-apps__imagen-app {
+    max-width: 80%;
+    max-height: 100%;
+    border-radius: 8px;
+    margin-bottom: 10%;
+    &:hover {
+        + {
+            .caption_port {
+                opacity: 1;
+            }
+        }
+        filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(180deg);
+    }
+}
+.caption_port {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    padding-top: 5%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: $font_family_lucida;
+    color: white;
+    font-size: 1rem;
+}
+#parrafo_port1 {
+    height: 2.3rem;
+    overflow: hidden;
+}
+#mostrarBtn_port1 {
+    display: inline-block;
+    margin-top: 3%;
+}
+#mostrarMenosBtn_port1 {
+    display: none;
+    margin-top: 3%;
+}
+#parrafo_port2 {
+    height: 2.3rem;
+    overflow: hidden;
+}
+#mostrarBtn_port2 {
+    display: inline-block;
+    margin-top: 3%;
+}
+#mostrarMenosBtn_port2 {
+    display: none;
+    margin-top: 3%;
+}
+#parrafo_port3 {
+    height: 2.3rem;
+    overflow: hidden;
+}
+#mostrarBtn_port3 {
+    display: inline-block;
+    margin-top: 3%;
+}
+#mostrarMenosBtn_port3 {
+    display: none;
+    margin-top: 3%;
+}
+#parrafo_port4 {
+    height: 2.3rem;
+    overflow: hidden;
+}
+#mostrarBtn_port4 {
+    display: inline-block;
+    margin-top: 3%;
+}
+#mostrarMenosBtn_port4 {
+    display: none;
+    margin-top: 3%;
+}    
+}
+//  VERSION TABLETS //
+@media (min-width: 321px) and (max-width: 767px) {
+.portafolio-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23%;
+    margin-bottom: 5%;
+}
+.portafolio-apps__intro {
+    font-family: $font_family_roboto;
+    text-indent: 2em;
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 8%;
+}
+.portafolio-apps__titulo-port-apps {
+    text-align: center;
+    font-family: $font_family_lucida;
+    font-size: 1.1rem;
+    padding-top: 6%;
+    margin-bottom: 5%;
+}
+.portafolio-apps__app {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 6%;
+    box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+}
+.portafolio-apps__app-info {
+    flex: 1;
+    margin-bottom: 2%;
+    padding: 5%;
+}
+.portafolio-apps__app-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 2%;
+}
+.portafolio-apps__app-titulo {
+    margin-top: 0;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: $font_family_lucida;
+    font-size: 1.1rem;
+}
+.portafolio-apps__app-texto {
+    margin-top: 0;
+    font-family: $font_family_roboto;
+    text-indent: 2em;
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+.portafolio-apps__imagen-app {
+    max-width: 80%;
+    max-height: 100%;
+    border-radius: 8px;
+    margin-bottom: 10%;
+    &:hover {
+        + {
+            .caption_port {
+                opacity: 1;
+            }
+        }
+        filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(180deg);
+    }
+}
+.caption_port {
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: $font_family_lucida;
+    color: white;
+}
+#parrafo_port1 {
+    height: 2.3rem;
+    overflow: hidden;
+}
+#mostrarBtn_port1 {
+    display: inline-block;
+    margin-top: 3%;
+}
+#mostrarMenosBtn_port1 {
+    display: none;
+    margin-top: 3%;
+}
+#parrafo_port2 {
+    height: 2.3rem;
+    overflow: hidden;
+}
+#mostrarBtn_port2 {
+    display: inline-block;
+    margin-top: 3%;
+}
+#mostrarMenosBtn_port2 {
+    display: none;
+    margin-top: 3%;
+}
+#parrafo_port3 {
+    height: 2.3rem;
+    overflow: hidden;
+}
+#mostrarBtn_port3 {
+    display: inline-block;
+    margin-top: 3%;
+}
+#mostrarMenosBtn_port3 {
+    display: none;
+    margin-top: 3%;
+}
+#parrafo_port4 {
+    height: 2.3rem;
+    overflow: hidden;
+}
+#mostrarBtn_port4 {
+    display: inline-block;
+    margin-top: 3%;
+}
+#mostrarMenosBtn_port4 {
+    display: none;
+    margin-top: 3%;
+}
+}
+// VERSION LAPTOPS //
+@media (min-width: 768px) {
+.portafolio-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+.portafolio-apps__intro {
+    font-family: $font_family_roboto;
+    text-indent: 2em;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.portafolio-apps__titulo-port-apps {
+    text-align: center;
+    font-family: $font_family_lucida;
+    font-size: 1.4rem;
+    padding-top: 5%;
+    margin-bottom: 2%;
+}
+.portafolio-apps__app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+    border-radius: 20px;
+    position: relative;
+}
+.portafolio-apps__app-info {
+    flex: 1;
+    margin-bottom: 2%;
+    padding: 5%;
+    font-family: $font_family_roboto;
+    text-indent: 2rem;
+}
+.portafolio-apps__app-titulo {
+    margin-bottom: 5%;
+    text-align: center;
+}
+.portafolio-apps__app-texto {
+    text-align: justify;
+    font-family: $font_family_roboto;
+    font-size: 1.2rem;
+}
+.portafolio-apps__app-image {
+    flex: 1;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portafolio-apps__imagen-app {
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    &:hover {
+        + {
+            .caption_port {
+                opacity: 1;
+            }
+        }
+        filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(180deg);
+    }
+}
+.caption_port {
+    width: 17%;
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: $font_family_lucida;
+    color: white;
+    text-align: center;
+}
+#mostrarBtn_port1 {
+    display: none;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#mostrarMenosBtn_port1 {
+    display: none;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#mostrarBtn_port2 {
+    display: none;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#mostrarMenosBtn_port2 {
+    display: none;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#mostrarBtn_port3 {
+    display: none;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#mostrarMenosBtn_port3 {
+    display: none;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#mostrarBtn_port4 {
+    display: none;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#mostrarMenosBtn_port4 {
+    display: none;
+    margin-top: 5%;
+    margin-right: 10%;
+}    
+}

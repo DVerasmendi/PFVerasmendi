@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DDB Web Studio</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <meta
+      name="description"
+      content="Explora nuestro portafolio de apps, incluyendo Easy Pay, una plataforma de integración de pagos; DataDash, un dashboard para visualizar y supervisar datos; Inventario Track, una app de gestión de inventario; y Totem Flow, un totem de autoatención para clientes."
+    />
+    <link rel="stylesheet" href="../css/style_v2.css" />
     <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <!-- Agrega SweetAlert2 JS y tu propio JS -->
@@ -24,6 +27,10 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <title>
+      Portafolio de Apps | Desarrollo de Easy Pay, DataDash, Inventario Track y
+      Totem Flow
+    </title>
   </head>
   <body>
     <img
@@ -95,6 +102,14 @@
             rápida y segura, brindando una experiencia sin complicaciones para
             tus compras en línea.
           </p>
+          <div class="div_botones_servicios">
+            <button id="mostrarBtn_port1" class="botones_parrafos">
+              Mostrar Más
+            </button>
+            <button id="mostrarMenosBtn_port1" class="botones_parrafos">
+              Mostrar Menos
+            </button>
+          </div>
         </div>
         <div class="portafolio-apps__app-image">
           <img
@@ -114,6 +129,14 @@
             información clave y toma decisiones informadas de manera rápida y
             eficiente.
           </p>
+          <div class="div_botones_servicios">
+            <button id="mostrarBtn_port2" class="botones_parrafos">
+              Mostrar Más
+            </button>
+            <button id="mostrarMenosBtn_port2" class="botones_parrafos">
+              Mostrar Menos
+            </button>
+          </div>
         </div>
         <div class="portafolio-apps__app-image">
           <img
@@ -135,6 +158,14 @@
             seguimiento eficiente de tus existencias. Optimiza tus operaciones y
             maximiza tu eficiencia con esta herramienta intuitiva y práctica.
           </p>
+          <div class="div_botones_servicios">
+            <button id="mostrarBtn_port3" class="botones_parrafos">
+              Mostrar Más
+            </button>
+            <button id="mostrarMenosBtn_port3" class="botones_parrafos">
+              Mostrar Menos
+            </button>
+          </div>
         </div>
         <div class="portafolio-apps__app-image">
           <img
@@ -158,6 +189,14 @@
             rápida y autónoma. Optimiza tus procesos, mejora la satisfacción del
             cliente y potencia tu negocio con TotemFlow.
           </p>
+          <div class="div_botones_servicios">
+            <button id="mostrarBtn_port4" class="botones_parrafos">
+              Mostrar Más
+            </button>
+            <button id="mostrarMenosBtn_port4" class="botones_parrafos">
+              Mostrar Menos
+            </button>
+          </div>
         </div>
         <div class="portafolio-apps__app-image">
           <img
@@ -177,12 +216,14 @@
       <div class="main-containers__left-container">
         <h2 class="main-containers__left-title">DDB Web Studio</h2>
         <p class="main-containers__left-paragraph">
-          Únete a mi lista y recibirás sorpresas súper cool. Tips, noticias y
-          más.
+          Si deseas concertar una entrevista o contactarme para oportunidades
+          laborales, estaré encantado de recibir tu mensaje.
         </p>
       </div>
       <div class="main-containers__right-container">
-        <h2 class="main-containers__right-title">ÚNETE A MI LISTA</h2>
+        <h2 class="main-containers__right-title">
+          ¡Contáctame para oportunidades laborales!
+        </h2>
         <form class="main-containers__right-form" method="POST">
           <input
             type="email"
@@ -193,6 +234,11 @@
             type="name"
             class="main-containers__right-input"
             placeholder="Full name"
+          />
+          <input
+            type="text"
+            class="main-containers__right-input formulario__textarea_chiquis"
+            placeholder="Texto"
           />
           <button type="submit" class="main-containers__right-button" disabled>
             Enviar
@@ -238,6 +284,17 @@
         </p>
       </div>
     </footer>
+    <a
+      href="https://api.whatsapp.com/send?phone=56947302836&text=Hola!%20Estoy%20interesado%20en%20tus%20productos,%20mi%20nombre%20es:"
+      target="_blank"
+      class="whatsapp-link"
+    >
+      <img
+        src="/static/img/whatsapp.png"
+        alt="WhatsApp"
+        class="whatsapp-logo"
+      />
+    </a>
   </body>
 </html>
 <script src="/js/style.js"></script>

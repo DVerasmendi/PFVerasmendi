@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DDB Web Studio</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <meta
+      name="description"
+      content="Contáctanos a través de nuestro formulario para cualquier consulta o oportunidad laboral. Estamos listos para colaborar contigo."
+    />
+    <link rel="stylesheet" href="../css/style_v2.css" />
     <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <!-- Agrega SweetAlert2 JS y tu propio JS -->
@@ -24,6 +27,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <title>Contacto | Envíanos tus consultas y oportunidades laborales</title>
   </head>
   <body>
     <img
@@ -107,12 +111,14 @@
       <div class="main-containers__left-container">
         <h2 class="main-containers__left-title">DDB Web Studio</h2>
         <p class="main-containers__left-paragraph">
-          Únete a mi lista y recibirás sorpresas súper cool. Tips, noticias y
-          más.
+          Si deseas concertar una entrevista o contactarme para oportunidades
+          laborales, estaré encantado de recibir tu mensaje.
         </p>
       </div>
       <div class="main-containers__right-container">
-        <h2 class="main-containers__right-title">ÚNETE A MI LISTA</h2>
+        <h2 class="main-containers__right-title">
+          ¡Contáctame para oportunidades laborales!
+        </h2>
         <form class="main-containers__right-form" method="POST">
           <input
             type="email"
@@ -123,6 +129,11 @@
             type="name"
             class="main-containers__right-input"
             placeholder="Full name"
+          />
+          <input
+            type="text"
+            class="main-containers__right-input formulario__textarea_chiquis"
+            placeholder="Texto"
           />
           <button type="submit" class="main-containers__right-button" disabled>
             Enviar
@@ -168,6 +179,17 @@
         </p>
       </div>
     </footer>
+    <a
+      href="https://api.whatsapp.com/send?phone=56947302836&text=Hola!%20Estoy%20interesado%20en%20tus%20productos,%20mi%20nombre%20es:"
+      target="_blank"
+      class="whatsapp-link"
+    >
+      <img
+        src="/static/img/whatsapp.png"
+        alt="WhatsApp"
+        class="whatsapp-logo"
+      />
+    </a>
   </body>
 </html>
 <script src="/js/style.js"></script>

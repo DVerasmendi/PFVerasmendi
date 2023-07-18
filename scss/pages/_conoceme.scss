@@ -1,0 +1,532 @@
+// Variables generales
+$font_family_roboto: 'Roboto', sans-serif;
+
+// VERSION MOBILE //
+@media (max-width: 320px) {
+$font_size_title: 1.1rem;
+$font_size_text: 0.8rem;
+
+.page-container {
+    text-align: center;
+  }
+  
+  .page-conoceme {
+    position: relative;
+
+  }
+  
+  .page-conoceme-img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .page-conoceme__image {
+    width: 50%;
+    margin-top:27%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+    
+  }
+
+
+  .page-conoceme__title {
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4px;
+    border-radius: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 82%;
+}
+  
+.page-conoceme__title h1 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.page-conoceme__title h3 {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.experiencia-laboral {
+    text-align: center;
+  }
+  
+  .experiencia-laboral__titulo {
+    display: inline-block;
+    font-weight: bold;
+    font-family: $font_family_roboto;
+    font-size: 1.3rem;
+	color: rgb(23, 23, 23);
+  }
+  
+  .experiencia-laboral__columnas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .experiencia-laboral__columna {
+    margin-top: 5px;
+    width:100%;
+  }
+  
+
+  .experiencia-laboral__subtitulo {
+    width:95%;
+    border-radius: 20px;
+	  background-color: rgba(0, 0, 0, 0.5);
+	  color: white;
+    margin-left: 2%;
+  }
+  
+  .experiencia-laboral__subtitulo_1{
+    font-size: 1rem;
+    margin-bottom: 1%;
+  }
+
+  .experiencia-laboral__subtitulo_2{
+    font-size: 0.8rem;
+  }
+  
+  .experiencia-laboral__parrafo {
+    text-align: justify;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 0.9rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .titulo-principal {
+    text-align: center;
+  }
+  
+
+  .lista-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .lista-imagenes__item {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  
+  .lista-imagenes__imagen {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 5%;
+    box-shadow: 0 0 10px 10px rgba(170, 230, 230, 0.788); /* Ajusta el color y la opacidad según tus preferencias */
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+  }
+  .image-container {
+    display: inline-block;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom:10%;
+  }
+
+  .titulos_sweet_alert{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2rem;
+  }
+  .custom-swal-confirm-button {
+    background-color: #1161BD !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+    border-color: #130269 !important;
+    
+  }
+  
+  
+  .lista-imagenes__imagen-general {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  
+  .lista-imagenes__texto {
+    text-align: justify;
+    font-size: 0.9rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+    
+}
+
+//  VERSION TABLETS //
+@media (min-width: 321px) and (max-width: 767px) {
+$font_size_title: 1.1rem;
+$font_size_text: 0.8rem;
+
+.page-container {
+    text-align: center;
+}
+.page-conoceme {
+    padding: 25% 3% 0% 3%;
+}
+.page-conoceme-img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .page-conoceme__image {
+    width: 50%;
+    margin-top:5%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  }
+
+
+  .page-conoceme__title {
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4px;
+    border-radius: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 82%;
+}
+  
+.page-conoceme__title h1 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.page-conoceme__title h3 {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.experiencia-laboral {
+    text-align: center;
+  }
+  
+  .experiencia-laboral__titulo {
+    display: inline-block;
+    font-weight: bold;
+    font-family: $font_family_roboto;
+    font-size: 1.3rem;
+	color: rgb(23, 23, 23);
+  }
+  
+  .experiencia-laboral__columnas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .experiencia-laboral__columna {
+    margin-top: 5px;
+    width:100%;
+  }
+  
+
+  .experiencia-laboral__subtitulo {
+    width:95%;
+    border-radius: 20px;
+	  background-color: rgba(0, 0, 0, 0.5);
+	  color: white;
+    margin-left: 2%;
+  }
+  
+  .experiencia-laboral__subtitulo_1{
+    font-size: 1rem;
+    margin-bottom: 1%;
+  }
+
+  .experiencia-laboral__subtitulo_2{
+    font-size: 0.8rem;
+  }
+  
+  .experiencia-laboral__parrafo {
+    text-align: justify;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 0.9rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .titulo-principal {
+    text-align: center;
+  }
+  
+
+  .lista-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .lista-imagenes__item {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  
+  .lista-imagenes__imagen {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 5%;
+    box-shadow: 0 0 10px 10px rgba(170, 230, 230, 0.788); /* Ajusta el color y la opacidad según tus preferencias */
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+  }
+  .image-container {
+    display: inline-block;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom:10%;
+  }
+
+  .titulos_sweet_alert{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2rem;
+  }
+  .custom-swal-confirm-button {
+    background-color: #1161BD !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+    border-color: #130269 !important;
+    
+  }
+  
+  
+  .lista-imagenes__imagen-general {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  
+  .lista-imagenes__texto {
+    text-align: justify;
+    font-size: 0.9rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+}
+
+// VERSION LAPTOPS //
+@media (min-width: 768px) {
+$font_size_title: 1.4rem;
+$font_size_text: 1.2rem;
+.page-container {
+  text-align: center;
+}
+.page-conoceme {
+  padding: 6% 3% 0% 5%;
+  margin-left: 5%;
+}
+.page-conoceme-img-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-conoceme__image {
+  width: 20%;
+  margin-bottom: 3%;
+  margin-top: 1%;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  margin-right: 8%;
+}
+
+
+.page-conoceme__title {
+  width: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4px;
+  margin-top: 3%;
+  border-radius: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-left: 40%;
+}
+
+.page-conoceme__title h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.page-conoceme__title h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.experiencia-laboral {
+  text-align: center;
+}
+
+.experiencia-laboral__titulo {
+  display: inline-block;
+  font-weight: bold;
+  font-family: $font_family_roboto;
+  font-size: 2rem;
+  color: rgb(23, 23, 23);
+}
+
+.experiencia-laboral__titulo_dos {
+  display: inline-block;
+  font-weight: bold;
+  font-family: $font_family_roboto;
+  font-size: 2rem;
+  color: rgb(23, 23, 23);
+}
+
+
+#ult_div{
+  display: inline-block;
+}
+
+.experiencia-laboral__columna {
+  margin-top: 5px;
+  width:95%;
+}
+
+
+.experiencia-laboral__subtitulo {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 50%;
+  margin-left: 21%;
+}
+
+
+
+#ult_lista_imagenes{
+  margin-left: 57%;
+}
+
+.experiencia-laboral__subtitulo_1{
+  font-size: 1.2rem;
+  margin-bottom: 1%;
+}
+
+.experiencia-laboral__subtitulo_2{
+  font-size: 0.9rem;
+}
+
+
+.titulo-principal {
+  text-align: center;
+}
+
+
+.experiencia-laboral__columnas {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.lista-imagenes {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
+.lista-imagenes__item {
+  width: 90%;
+  height: 360px;
+  padding: 1%;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 50px rgba(43, 125, 240, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.lista-imagenes__imagen {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 3%;
+  box-shadow: 0 0 10px 10px rgba(170, 230, 230, 0.788); /* Ajusta el color y la opacidad según tus preferencias */
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+}
+.image-container {
+  display: inline-block;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom:10%;
+}
+
+.titulos_sweet_alert{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2rem;
+}
+.custom-swal-confirm-button {
+  background-color: #1161BD !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border-radius: 15px !important;
+  font-size: 18px !important;
+  cursor: pointer !important;
+  border-color: #130269 !important;
+  
+}
+
+
+.lista-imagenes__imagen-general {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.lista-imagenes__texto {
+  text-align: center;
+  font-family: $font_family_roboto;
+  font-size: 1.2rem;
+}
+
+}
