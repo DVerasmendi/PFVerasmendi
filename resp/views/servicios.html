@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre nuestros servicios de desarrollo web y aplicaciones móviles, incluyendo transacciones de pago y tiendas virtuales."
+    />
+    <link rel="stylesheet" href="../css/style_v2.css" />
+    <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Agrega SweetAlert2 JS y tu propio JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>
+      Servicios de Desarrollo Web, Aplicaciones Móviles y Transacciones de Pago
+    </title>
+  </head>
+  <body>
+    <img
+      id="loguito_jugueton"
+      src="/static/img/logo_click_me.png"
+      alt="Logo DDB Web Studio"
+    />
+    <header class="header">
+      <div id="div_titulo_main">
+        <a href="../index.html">
+          <img
+            id="main_logo"
+            src="/static/img/logo3.png"
+            alt="Logo DDB Web Studio"
+          />
+        </a>
+      </div>
+      <div class="menusito-toggle">
+        <div class="menusito-icon">
+          <span class="menusito-line"></span>
+          <span class="menusito-line"></span>
+          <span class="menusito-line"></span>
+        </div>
+        <div class="close-icon"></div>
+      </div>
+      <nav class="navsito">
+        <ul class="navsito__list">
+          <li class="navsito__item">
+            <a class="navsito__link" href="../index.html">Home</a>
+          </li>
+          <li class="navsito__item">
+            <a class="navsito__link" href="./conoceme.html">Conóceme</a>
+          </li>
+          <li class="navsito__item">
+            <a class="navsito__link" href="./servicios.html">Servicios</a>
+          </li>
+          <li class="navsito__item">
+            <a class="navsito__link" href="./portafolio_apps.html"
+              >Portafolio</a
+            >
+          </li>
+          <li class="navsito__item">
+            <a class="navsito__link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 id="titulo_servicios">Nuestros Servicios</h2>
+    <div class="servicios-wrapper">
+      <div class="servicio">
+        <h2>Desarrollo Web Personalizado</h2>
+        <div class="servicio-content">
+          <div class="servicio-text">
+            <p id="parrafo_servicio1">
+              Nuestro servicio de desarrollo web personalizado te ofrece
+              soluciones a medida para convertir tu visión en una realidad
+              digital excepcional. Utilizando las últimas tecnologías y
+              prácticas de desarrollo, creamos sitios web responsivos,
+              intuitivos y visualmente atractivos que reflejan tu marca y
+              brindan una experiencia de usuario excepcional. Nos destacamos por
+              nuestro compromiso con la excelencia y la satisfacción del
+              cliente, trabajando arduamente para superar tus expectativas y
+              dejando nuestra marca en cada proyecto. Únete a nosotros en este
+              emocionante viaje hacia la transformación digital de tu negocio.
+            </p>
+            <div class="div_botones_servicios">
+              <button id="mostrarBtn_servicio1" class="botones_parrafos">
+                Mostrar Más
+              </button>
+              <button id="mostrarMenosBtn_servicio1" class="botones_parrafos">
+                Mostrar Menos
+              </button>
+            </div>
+          </div>
+          <div class="servicio-img">
+            <img
+              src="/static/img/serviciodesarrolloweb.jpg"
+              alt="serviciodesarrolloweb"
+              class="img_servicios"
+            />
+            <h3 class="caption">
+              Transforma tu Visión en una Experiencia Digital Excepcional
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="servicio">
+        <h2>Aplicaciones móviles personalizadas</h2>
+        <div class="servicio-content">
+          <div class="servicio-text">
+            <p id="parrafo_servicio2">
+              Nuestro servicio de desarrollo de aplicaciones móviles te ofrece
+              la oportunidad de llevar tu negocio al alcance de millones de
+              usuarios a través de plataformas móviles. Diseñamos y
+              desarrollamos aplicaciones móviles personalizadas y altamente
+              funcionales que se adaptan a tus necesidades y objetivos
+              comerciales. Ya sea que estés buscando una aplicación nativa o
+              multiplataforma, nuestro equipo de expertos en desarrollo móvil se
+              encargará de brindarte soluciones innovadoras y de calidad.
+              Trabajamos estrechamente contigo para comprender tus
+              requerimientos y ofrecerte una aplicación móvil que cautivará a
+              tus usuarios y te ayudará a destacarte en el mercado. ¡Déjanos
+              llevar tu negocio al siguiente nivel móvil!
+            </p>
+            <div class="div_botones_servicios">
+              <button id="mostrarBtn_servicio2" class="botones_parrafos">
+                Mostrar Más
+              </button>
+              <button id="mostrarMenosBtn_servicio2" class="botones_parrafos">
+                Mostrar Menos
+              </button>
+            </div>
+          </div>
+          <div class="servicio-img">
+            <img
+              src="/static/img/servicioappmovil.jpg"
+              alt="servicioappmovil"
+              class="img_servicios"
+            />
+            <h3 class="caption">Potencia tu negocio</h3>
+          </div>
+        </div>
+      </div>
+      <div class="servicio">
+        <h2>Facilita las transacciones en tu negocio</h2>
+        <div class="servicio-content">
+          <div class="servicio-text">
+            <p id="parrafo_servicio3">
+              Nuestro servicio de implementación de pasarelas de pago te ofrece
+              la posibilidad de integrar sistemas de pago como PayPal, Mercado
+              Pago y PayU a tu sitio web o aplicación móvil. Brindamos
+              soluciones personalizadas y seguras que garantizan una experiencia
+              de compra fluida para tus clientes, permitiéndoles realizar
+              transacciones de forma rápida y confiable. Simplifica el proceso
+              de pago y aumenta la conversión de ventas con nuestras soluciones
+              de pasarelas de pago eficientes y adaptadas a tus necesidades
+              comerciales.
+            </p>
+            <div class="div_botones_servicios">
+              <button id="mostrarBtn_servicio3" class="botones_parrafos">
+                Mostrar Más
+              </button>
+              <button id="mostrarMenosBtn_servicio3" class="botones_parrafos">
+                Mostrar Menos
+              </button>
+            </div>
+          </div>
+          <div class="servicio-img">
+            <img
+              src="/static/img/serviciopasarelapago.jpg"
+              alt="serviciopasarelapago"
+              class="img_servicios"
+            />
+            <h3 class="caption">Soluciones de pagos seguras y confiables</h3>
+          </div>
+        </div>
+      </div>
+      <div class="servicio">
+        <h2>Construye tu Tienda Virtual</h2>
+        <div class="servicio-content">
+          <div class="servicio-text">
+            <p id="parrafo_servicio4">
+              Nuestro servicio de desarrollo de tiendas virtuales te ofrece la
+              posibilidad de crear una plataforma de comercio electrónico sólida
+              y atractiva para tu negocio. Diseñamos y desarrollamos tiendas en
+              línea personalizadas, adaptadas a tus necesidades y objetivos
+              comerciales. Desde la configuración de catálogos de productos
+              hasta la implementación de sistemas de pago seguros y la
+              optimización del proceso de compra, nos aseguramos de brindarte
+              una tienda virtual completa y funcional. Con nuestra experiencia
+              en desarrollo web y enfoque centrado en la experiencia del
+              usuario, creamos tiendas virtuales intuitivas, atractivas y
+              altamente convertibles. Impulsa tus ventas en línea y lleva tu
+              negocio al siguiente nivel con nuestra solución de desarrollo de
+              tiendas virtuales.
+            </p>
+            <div class="div_botones_servicios">
+              <button id="mostrarBtn_servicio4" class="botones_parrafos">
+                Mostrar Más
+              </button>
+              <button id="mostrarMenosBtn_servicio4" class="botones_parrafos">
+                Mostrar Menos
+              </button>
+            </div>
+          </div>
+          <div class="servicio-img">
+            <img
+              src="/static/img/serviciotiendavirtual.jpg"
+              alt="serviciotiendavirtual"
+              class="img_servicios"
+            />
+            <h3 class="caption">Servicio de Desarrollo Ecommerce</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UNETE a MI LISTA-->
+    <div class="main-containers">
+      <div class="main-containers__left-container">
+        <h2 class="main-containers__left-title">DDB Web Studio</h2>
+        <p class="main-containers__left-paragraph">
+          Si deseas concertar una entrevista o contactarme para oportunidades
+          laborales, estaré encantado de recibir tu mensaje.
+        </p>
+      </div>
+      <div class="main-containers__right-container">
+        <h2 class="main-containers__right-title">
+          ¡Contáctame para oportunidades laborales!
+        </h2>
+        <form class="main-containers__right-form" method="POST">
+          <input
+            type="email"
+            class="main-containers__right-input"
+            placeholder="Email Address"
+          />
+          <input
+            type="name"
+            class="main-containers__right-input"
+            placeholder="Full name"
+          />
+          <input
+            type="text"
+            class="main-containers__right-input formulario__textarea_chiquis"
+            placeholder="Texto"
+          />
+          <button type="submit" class="main-containers__right-button" disabled>
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__social-icons">
+          <a
+            class="footer__social-icon"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/static/img/ig.png" alt="Instagram" />
+          </a>
+          <a
+            class="footer__social-icon"
+            href="https://es-la.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/static/img/facebook.png" alt="Facebook" />
+          </a>
+          <a
+            class="footer__social-icon"
+            href="https://cl.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/static/img/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a class="footer__social-icon" href="mailto:correo@example.com">
+            <img src="/static/img/email.png" alt="Correo Electrónico" />
+          </a>
+        </div>
+        <p class="footer__text">
+          Santiago de Chile, © 2023 All rights reserved. DDB Web Studio.
+          Designed by DDB Web Studio
+        </p>
+      </div>
+    </footer>
+    <a
+      href="https://api.whatsapp.com/send?phone=56947302836&text=Hola!%20Estoy%20interesado%20en%20tus%20productos,%20mi%20nombre%20es:"
+      target="_blank"
+      class="whatsapp-link"
+    >
+      <img
+        src="/static/img/whatsapp.png"
+        alt="WhatsApp"
+        class="whatsapp-logo"
+      />
+    </a>
+  </body>
+</html>
+<script src="/js/style.js"></script>
