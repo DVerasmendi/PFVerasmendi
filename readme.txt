@@ -1,2 +1,2 @@
 ACTIVAR SASS 
-sass --watch scss\main.scss css/stylev2.css
+sass --watch scss\main.scss css/style_v2.css

@@ -241,11 +241,21 @@ fieldset[disabled] .botones_parrafos.active {
   .header:hover #main_logo {
     max-height: 150px;
   }
+  #a_title {
+    text-decoration: none;
+  }
   #main_logo {
-    width: 75%;
+    width: 65%;
     margin: 0% 2% 4% -2%;
     max-height: 100px;
     transition: max-height 0.3s ease;
+  }
+  #btn-en {
+    margin-left: 3%;
+  }
+  .img_idioma {
+    width: 20px;
+    height: 20px;
   }
   #div_titulo_main {
     display: inline;
@@ -312,10 +322,21 @@ fieldset[disabled] .botones_parrafos.active {
   }
   #main_logo {
     width: 65%;
-    margin: 0% 2% 1% 2%;
-    padding-bottom: 3%;
+    margin: 0% 2% 4% -2%;
     max-height: 100px;
     transition: max-height 0.3s ease;
+  }
+  #a_title {
+    text-decoration: none;
+  }
+  #btn-en {
+    margin-left: 2%;
+  }
+  .img_idioma {
+    width: 25px;
+    height: 25px;
+    margin-left: 1%;
+    margin-bottom: 2%;
   }
   #div_titulo_main {
     display: inline;
@@ -392,6 +413,17 @@ fieldset[disabled] .botones_parrafos.active {
     padding: 5%;
     max-height: 100px;
     transition: max-height 0.3s ease;
+  }
+  #a_title {
+    text-decoration: none;
+  }
+  #btn-en {
+    margin-left: 2%;
+  }
+  .img_idioma {
+    width: 43px;
+    height: 43px;
+    margin-bottom: 2%;
   }
   .header__title {
     font-size: 3rem;
@@ -1003,6 +1035,7 @@ fieldset[disabled] .botones_parrafos.active {
     font-family: "Roboto", sans-serif;
     font-size: 2rem;
     color: rgb(23, 23, 23);
+    margin-right: 9%;
   }
   .experiencia-laboral__titulo_dos {
     display: inline-block;
@@ -2296,7 +2329,7 @@ fieldset[disabled] .botones_parrafos.active {
     margin: 20% 8% 8% 8%;
   }
   .texto1__parrafo {
-    margin-top: 8%;
+    margin-top: 9%;
     font-family: "Roboto", sans-serif;
     font-size: 1.1rem;
     font-weight: bold;
@@ -2527,7 +2560,7 @@ fieldset[disabled] .botones_parrafos.active {
   .texto1 {
     width: 100%;
     text-align: center;
-    margin: 15% 8% 2% 8%;
+    margin: 10% 8% 2% 8%;
   }
   .texto2 {
     width: 100%;

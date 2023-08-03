@@ -646,7 +646,7 @@ function logoClickHandler() {
   Swal.fire({
     html: `
     <div class="containers__sweet_alert">
-    <h2 class="main-containers__right-title">¡Contáctame para oportunidades laborales!</h2>
+    <h2 class="main-containers__right-title">Contact me for job opportunities!</h2>
     <form class="main-containers__right-form" method="POST">
       <input
         type="email"
@@ -661,14 +661,14 @@ function logoClickHandler() {
       <input
         type="text"
         class="main-containers__right-input contacto-formulario__textarea"
-        placeholder="Texto"
+        placeholder="Text"
       />
     </form>
   </div>
     `,
     showCancelButton: true,
-    confirmButtonText: 'Enviar',
-    cancelButtonText: 'Cancelar',
+    confirmButtonText: 'Send',
+    cancelButtonText: 'Cancel',
     preConfirm: () => {
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
@@ -775,7 +775,7 @@ if (imgGeneral1 || imgGeneral2 || imgGeneral3 || imgGeneral4 || imgGeneral5 || i
     imgGeneral1.addEventListener('click', () => {
       Swal.fire({
         icon: 'success',
-        title: '<h1 class="titulos_sweet_alert">Lenguajes de programación</h1>',
+        title: '<h1 class="titulos_sweet_alert">Programming languages</h1>',
         html: '<div class="image-container"><img src="../static/img/conoceme/python.png" alt="Imagen python" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/flask.png" alt="Imagen flask" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/django.png" alt="Imagen django" class="lista-imagenes__imagen"></div>'+
@@ -799,7 +799,7 @@ if (imgGeneral1 || imgGeneral2 || imgGeneral3 || imgGeneral4 || imgGeneral5 || i
 imgGeneral2.addEventListener('click', () => {
       Swal.fire({
         icon: 'success',
-        title: '<h1 class="titulos_sweet_alert">Integraciones de pago</h1>',
+        title: '<h1 class="titulos_sweet_alert">Payment integrations</h1>',
         html: '<div class="image-container"><img src="../static/img/conoceme/stripe.png" alt="Imagen stripe" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/redelcom.png" alt="Imagen redelcom" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/mp.png" alt="Imagen mp" class="lista-imagenes__imagen"></div>'+
@@ -848,7 +848,7 @@ img_general3.addEventListener('click', () => {
 img_general4.addEventListener('click', () => {
       Swal.fire({
         icon: 'success',
-        title: '<h1 class="titulos_sweet_alert">Servidores</h1>',
+        title: '<h1 class="titulos_sweet_alert">Servers</h1>',
         html: '<div class="image-container"><img src="../static/img/conoceme/vcenter.png" alt="Imagen vcenter" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/linux.png" alt="Imagen linux" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/windows.png" alt="Imagen windows" class="lista-imagenes__imagen"></div>',
@@ -870,7 +870,7 @@ img_general4.addEventListener('click', () => {
 img_general5.addEventListener('click', () => {
       Swal.fire({
         icon: 'success',
-        title: '<h1 class="titulos_sweet_alert">Sistema de monitoreo y Docker</h1>',
+        title: '<h1 class="titulos_sweet_alert">Monitoring System and Docker</h1>',
         html: '<div class="image-container"><img src="../static/img/conoceme/grafana.png" alt="Imagen grafana" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/docker.png" alt="Imagen docker" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/influx.png" alt="Imagen influx" class="lista-imagenes__imagen"></div>',
@@ -892,7 +892,7 @@ img_general5.addEventListener('click', () => {
 img_general6.addEventListener('click', () => {
       Swal.fire({
         icon: 'success',
-        title: '<h1 class="titulos_sweet_alert">Redes</h1>',
+        title: '<h1 class="titulos_sweet_alert">Networks</h1>',
         html: '<div class="image-container"><img src="../static/img/conoceme/ubiquiti.png" alt="Imagen ubiquiti" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/starlink.jpg" alt="Imagen starlink" class="lista-imagenes__imagen"></div>' +
               '<div class="image-container"><img src="../static/img/conoceme/mikrotik.png" alt="Imagen mikrotik" class="lista-imagenes__imagen"></div>',
@@ -934,3 +934,236 @@ img_general7.addEventListener('click', () => {
       
 });
 }
+
+
+
+/* CAMBIO DE IDIOMAS */
+i18next.init(
+  {
+    lng: 'en', // Idioma por defecto
+    resources: {
+      en: {
+        translation: {
+          "title": "Custom Web Development and Innovative Applications | Boost Your Business",
+          "home": "Home",
+          "about": "About",
+          "services": "Services",
+          "portfolio": "Portfolio",
+          "contact": "Contact",
+          "welcome": "Welcome to DDB Web Studio",
+          "greeting": "Hello, {name}!",
+          "intro_paragraph": "Boosting your online presence and building exceptional digital experiences",
+          "development_paragraph": "Custom web development and innovative applications to boost your business, comprehensive services, and cutting-edge frontend/backend enhancements",
+          "transform_title": "Transforming Ideas into Digital Reality",
+          "transform_description": "Custom web development and application creation to boost your online presence",
+          "success_title": "Your Web Success, Our Passion",
+          "success_description": "Professional web development, comprehensive services, and state-of-the-art improvements",
+          "solutions_title": "Comprehensive Solutions",
+          "solutions_description": "We are experts in web development and creating apps tailored to your needs",
+          "ideas_title": "Turn Your Ideas into Action with a Click",
+          "ideas_description": "At DDB Web Studio, we are passionately dedicated to transforming ideas into innovative digital solutions. Our focus is on custom web development and creating applications that adapt to the unique needs of our clients.",
+          "show_more": "Show More",
+          "show_less": "Show Less",
+          "focus_description": "With meticulous focus on design and functionality, we work to deliver engaging and functional digital experiences. From creating custom websites that reflect your brand's identity to developing cutting-edge applications that drive interaction with your customers, our goal is to help you achieve online success.",
+          "summary_title": "We Turn Ideas into Successful Digital Solutions.",
+          "ddb_studio": "DDB Web Studio",
+          "contact_me": "If you would like to schedule an interview or contact me for job opportunities, I will be happy to receive your message.",
+          "contact_opportunities": "Contact Me for Job Opportunities!",
+          "send": "Send",
+          "footer_text": "Santiago de Chile, © 2023 All rights reserved. DDB Web Studio. Designed by DDB Web Studio",
+          /**CONOCEME **/
+          "conoceme_title":"Get to Know Me - Experience in Programming and Notable Achievements",
+          "deiker_name": "Deiker Verasmendi",
+          "telecom_engineer": "Telecommunications Engineer",
+          "exp_laboral": "Work Experience",
+          "prog_desarrollador": "Full Stack Programmer and Developer with skills in Python, PHP, .NET, and JavaScript. Specialized in web development with Flask and Django, and passionate about creating innovative solutions.",
+          "exp_pago": "Extensive experience in payment integrations with APIs from recognized companies.",
+          "exp_almacenamiento": "Extensive experience in data management and optimization in cloud storage environments, ensuring efficient performance and high availability.",
+          "exp_admin_servidores": "Knowledge in server administration: Vcenter, configuring and deploying servers in Linux and Windows environments.",
+          "exp_docker": "Experience in using Docker for creating and managing development and production environments. Extensive knowledge in monitoring systems like Grafana and InfluxDB.",
+          "ingeniero_redes": "Network Engineer with extensive experience in LAN/WAN network administration and monitoring in the Southern region of Chile, including the Torres del Paine area. Specialized in Telecommunications projects and Ubiquiti links (AirFiber, LiteBeam). Knowledge in technologies like Starlink and Mikrotik modules for Routing, Firewall, and NAT.",
+          "desarrollador_casperjs": "Developer specialized in Data Mining Level III with CasperJS.",
+          "desarrollo_js_html": "Experience in developing codes in JavaScript. Inspection and handling of codes in HTML. Web Scraping with CasperJS.",
+          "trayectoria_profesional": "Professional Trajectory",
+          "austro_link": "https://www.austrointernet.cl/",
+          "austro_nombre": "AUSTRO INTERNET S.A",
+          "austro_fechas": "(Chile) October 2018 - Present",
+          "talent_link": "https://cl.talent.com/",
+          "talent_nombre": "TALENT INC.",
+          "talent_fechas": "(Canada) August 2016 – October 2018",
+          /**SERVICIOS **/
+          "servicios_title":"Web Development Services, Mobile Applications, and Payment Transactions",
+          "servicios_title_2": "Our Services",
+          "desarrollo_web_title": "Custom Web Development",
+          "desarrollo_web_text": "Our custom web development service offers tailor-made solutions to turn your vision into an exceptional digital reality. Using the latest technologies and development practices, we create responsive, intuitive, and visually appealing websites that reflect your brand and provide an outstanding user experience. We stand out for our commitment to excellence and customer satisfaction, working hard to exceed your expectations and leave our mark on every project. Join us on this exciting journey towards the digital transformation of your business.",
+          "show_more": "Show More",
+          "show_less": "Show Less",
+          "transform_title": "Transform Your Vision into an Exceptional Digital Experience",
+          "aplicaciones_moviles_title": "Custom Mobile Applications",
+          "aplicaciones_moviles_text": "Our custom mobile application development service offers you the opportunity to reach millions of users through mobile platforms. We design and develop personalized and highly functional mobile applications that adapt to your needs and business goals. Whether you are looking for a native or cross-platform application, our team of mobile development experts will provide innovative and quality solutions. We work closely with you to understand your requirements and offer you a mobile application that will captivate your users and help you stand out in the market. Let us take your business to the next mobile level!",
+          "ideas_title": "Empower Your Business",
+          "transacciones_negocio_title": "Streamline Transactions in Your Business",
+          "transacciones_negocio_text": "Our payment gateway implementation service offers you the possibility to integrate payment systems such as PayPal, Mercado Pago, and PayU into your website or mobile application. We provide custom and secure solutions that ensure a smooth shopping experience for your customers, allowing them to make transactions quickly and reliably. Simplify the payment process and increase sales conversion with our efficient payment gateway solutions tailored to your business needs.",
+          "success_title": "Secure and Reliable Payment Solutions",
+          "construye_tienda_title": "Build Your Virtual Store",
+          "construye_tienda_text": "Our virtual store development service offers you the possibility to create a robust and attractive e-commerce platform for your business. We design and develop customized online stores that cater to your needs and business objectives. From setting up product catalogs to implementing secure payment systems and optimizing the purchasing process, we ensure that you receive a complete and functional virtual store. With our expertise in web development and a user-centric approach, we create intuitive, appealing, and highly convertible virtual stores. Boost your online sales and take your business to the next level with our virtual store development solution.",
+          "ecommerce_title": "Ecommerce Development Service",
+          /**PORTAFOLIO **/
+          "portafolio_title":"Apps Portfolio | Development of Easy Pay, DataDash, Inventory Track, and Totem Flow",
+          "portfolio.apps_title": "Explore Our Portfolio of Applications",
+          "portfolio.apps_intro_text": "Welcome to our portfolio of applications, where you can discover a wide variety of projects that have been developed with passion and dedication. Our portfolio covers a wide range of applications that stand out in different areas, from custom websites and virtual stores to innovative mobile applications.",
+          "portfolio.app1_title": "EasyPay",
+          "portfolio.app1_text": "EasyPay is an innovative payment gateway application that simplifies your online transactions. With its intuitive interface and high security standards, you can make payments quickly and securely, providing a hassle-free experience for your online purchases.",
+          "portfolio.app1_caption": "Your Ally for Fast and Secure Payments",
+          "portfolio.app2_title": "DataDash",
+          "portfolio.app2_text": "DataDash is an intuitive and powerful dashboard application that allows you to monitor and analyze your data in real-time. Get key insights and make informed decisions quickly and efficiently.",
+          "portfolio.app2_caption": "Your Smart Control Center for Data Visualization",
+          "portfolio.app3_title": "InventoTrack",
+          "portfolio.app3_text": "InventoTrack is a powerful inventory management application that enables you to have precise control of your products and efficiently track your stocks. Optimize your operations and maximize your efficiency with this intuitive and practical tool.",
+          "portfolio.app3_caption": "Control and Optimize Your Inventories with Ease",
+          "portfolio.app4_title": "TotemFlow",
+          "portfolio.app4_text": "TotemFlow is a self-service application that transforms the way your customers interact with your business. With an intuitive interface and advanced features, users can carry out transactions, obtain information, and access services quickly and autonomously. Optimize your processes, improve customer satisfaction, and empower your business with TotemFlow.",
+          "portfolio.app4_caption": "The Innovative Solution for Customer Self-Service",
+          /** CONTACTO **/
+          "contacto_title":"Contact | Send Us Your Inquiries and Job Opportunities",
+          "contact.title": "Contact | Send us your inquiries and job opportunities",
+          "contact.placeholderName": "Full Name",
+          "contact.placeholderEmail": "Email",
+          "contact.placeholderSubject": "Subject",
+          "contact.placeholderMessage": "Message",
+          "contact.buttonSend": "Send",
+        }
+      },
+      es: {
+        translation: {
+          "title": "Desarrollo web a medida y aplicaciones innovadoras | Impulsa tu negocio",
+          "home": "Inicio",
+          "about": "Conóceme",
+          "services": "Servicios",
+          "portfolio": "Portafolio",
+          "contact": "Contacto",
+          "welcome": "Bienvenido a DDB Web Studio",
+          "greeting": "¡Hola, {name}!",
+          "intro_paragraph": "Impulsando tu presencia en línea y construyendo experiencias digitales excepcionales",
+          "development_paragraph": "Desarrollo web personalizado y creación de aplicaciones para potenciar tu presencia en línea, servicios integrales y mejoras frontend/backend de vanguardia",
+          "transform_title": "Transformando Ideas en Realidad Digital",
+          "transform_description": "Desarrollo web personalizado y creación de aplicaciones para potenciar tu presencia en línea",
+          "success_title": "Tu Éxito en la Web, Nuestra Pasión",
+          "success_description": "Desarrollo web profesional, servicios completos y mejoras de última generación",
+          "solutions_title": "Soluciones Integrales",
+          "solutions_description": "Somos expertos en el desarrollo web y la creación de aplicaciones adaptadas a tus necesidades",
+          "ideas_title": "Convierte tus Ideas en Acción con un Click",
+          "ideas_description": "En DDB Web Studio, nos dedicamos apasionadamente a transformar ideas en soluciones digitales innovadoras. Nuestro enfoque se centra en el desarrollo web personalizado y la creación de aplicaciones que se adaptan a las necesidades únicas de nuestros clientes.",
+          "show_more": "Mostrar Más",
+          "show_less": "Mostrar Menos",
+          "focus_description": "Con un enfoque meticuloso en el diseño y la funcionalidad, trabajamos para proporcionar experiencias digitales atractivas y funcionales. Desde la creación de sitios web personalizados que reflejen la identidad de tu marca hasta el desarrollo de aplicaciones de vanguardia que impulsen la interacción con tus clientes, nuestro objetivo es ayudarte a alcanzar el éxito en línea.",
+          "summary_title": "Transformamos Ideas en Soluciones Digitales Exitosas.",
+          "ddb_studio": "DDB Web Studio",
+          "contact_me": "Si deseas concertar una entrevista o contactarme para oportunidades laborales, estaré encantado de recibir tu mensaje.",
+          "contact_opportunities": "¡Contáctame para oportunidades laborales!",
+          "send": "Enviar",
+          "footer_text": "Santiago de Chile, © 2023 Todos los derechos reservados. DDB Web Studio. Diseñado por DDB Web Studio",
+          /** CONOCEME */
+          "conoceme_title":"Conóceme - Experiencia en programación y logros destacados",
+          "deiker_name": "Deiker Verasmendi",
+          "telecom_engineer": "Ingeniero en Telecomunicaciones",
+          "exp_laboral": "Experiencia Laboral",
+          "prog_desarrollador": "Programador y desarrollador Full Stack con habilidades en Python, PHP, .NET y JavaScript. Especializado en el desarrollo web con Flask y Django, y apasionado por crear soluciones innovadoras.",
+          "exp_pago": "Amplia experiencia en integraciones de pago con APIs de reconocidas compañías.",
+          "exp_almacenamiento": "Amplia experiencia en la gestión y optimización de datos en entornos de almacenamiento en la nube, garantizando un rendimiento eficiente y una alta disponibilidad.",
+          "exp_admin_servidores": "Conocimiento en administración de servidores: Vcenter, configuración y despliegue de servidores en entornos Linux y Windows.",
+          "exp_docker": "Experiencia en el uso de Docker para la creación y gestión de entornos de desarrollo y producción. Amplio conocimiento en sistemas de monitoreo como Grafana e InfluxDB.",
+          "ingeniero_redes": "Ingeniero de Redes con amplia experiencia en la administración y monitorización de redes LAN/WAN en la región Sur de Chile, incluyendo el área de Torres del Paine. Especializado en proyectos de Telecomunicaciones y enlaces Ubiquiti (AirFiber, LiteBeam). Conocimiento en tecnologías como Starlink y módulos Mikrotik para Routing, Firewall y NAT.",
+          "desarrollador_casperjs": "Desarrollador Especializado en Minería de Data Nivel III en CasperJS.",
+          "desarrollo_js_html": "Experiencia en desarrollo de códigos en JavaScript. Inspección y Manejo de códigos en HTML. Web Scraping en CasperJS.",
+          "trayectoria_profesional": "Trayectoria Profesional",
+          "austro_link": "https://www.austrointernet.cl/",
+          "austro_nombre": "AUSTRO INTERNET S.A",
+          "austro_fechas": "(Chile) Octubre 2018 - Actualidad",
+          "talent_link": "https://cl.talent.com/",
+          "talent_nombre": "TALENT INC.",
+          "talent_fechas": "(Canadá) Agosto 2016 – Octubre 2018",
+          /**SERVICIOS **/
+          "servicios_title":"Servicios de Desarrollo Web, Aplicaciones Móviles y Transacciones de Pago",
+          "servicios_title_2": "Nuestros Servicios",
+          "desarrollo_web_title": "Desarrollo Web Personalizado",
+          "desarrollo_web_text": "Nuestro servicio de desarrollo web personalizado te ofrece soluciones a medida para convertir tu visión en una realidad digital excepcional. Utilizando las últimas tecnologías y prácticas de desarrollo, creamos sitios web responsivos, intuitivos y visualmente atractivos que reflejan tu marca y brindan una experiencia de usuario excepcional. Nos destacamos por nuestro compromiso con la excelencia y la satisfacción del cliente, trabajando arduamente para superar tus expectativas y dejando nuestra marca en cada proyecto. Únete a nosotros en este emocionante viaje hacia la transformación digital de tu negocio.",
+          "show_more": "Mostrar Más",
+          "show_less": "Mostrar Menos",
+          "transform_title": "Transforma tu Visión en una Experiencia Digital Excepcional",
+          "aplicaciones_moviles_title": "Aplicaciones móviles personalizadas",
+          "aplicaciones_moviles_text": "Nuestro servicio de desarrollo de aplicaciones móviles te ofrece la oportunidad de llevar tu negocio al alcance de millones de usuarios a través de plataformas móviles. Diseñamos y desarrollamos aplicaciones móviles personalizadas y altamente funcionales que se adaptan a tus necesidades y objetivos comerciales. Ya sea que estés buscando una aplicación nativa o multiplataforma, nuestro equipo de expertos en desarrollo móvil se encargará de brindarte soluciones innovadoras y de calidad. Trabajamos estrechamente contigo para comprender tus requerimientos y ofrecerte una aplicación móvil que cautivará a tus usuarios y te ayudará a destacarte en el mercado. ¡Déjanos llevar tu negocio al siguiente nivel móvil!",
+          "ideas_title": "Potencia tu negocio",
+          "transacciones_negocio_title": "Facilita las transacciones en tu negocio",
+          "transacciones_negocio_text": "Nuestro servicio de implementación de pasarelas de pago te ofrece la posibilidad de integrar sistemas de pago como PayPal, Mercado Pago y PayU a tu sitio web o aplicación móvil. Brindamos soluciones personalizadas y seguras que garantizan una experiencia de compra fluida para tus clientes, permitiéndoles realizar transacciones de forma rápida y confiable. Simplifica el proceso de pago y aumenta la conversión de ventas con nuestras soluciones de pasarelas de pago eficientes y adaptadas a tus necesidades comerciales.",
+          "success_title": "Soluciones de pagos seguras y confiables",
+          "construye_tienda_title": "Construye tu Tienda Virtual",
+          "construye_tienda_text": "Nuestro servicio de desarrollo de tiendas virtuales te ofrece la posibilidad de crear una plataforma de comercio electrónico sólida y atractiva para tu negocio. Diseñamos y desarrollamos tiendas en línea personalizadas, adaptadas a tus necesidades y objetivos comerciales. Desde la configuración de catálogos de productos hasta la implementación de sistemas de pago seguros y la optimización del proceso de compra, nos aseguramos de brindarte una tienda virtual completa y funcional. Con nuestra experiencia en desarrollo web y enfoque centrado en la experiencia del usuario, creamos tiendas virtuales intuitivas, atractivas y altamente convertibles. Impulsa tus ventas en línea y lleva tu negocio al siguiente nivel con nuestra solución de desarrollo de tiendas virtuales.",
+          "ecommerce_title": "Servicio de Desarrollo Ecommerce",
+          /**PORTAFOLIO **/
+          "portafolio_title":"Portafolio de Apps | Desarrollo de Easy Pay, DataDash, Inventario Track y Totem Flow",
+          "portfolio.apps_title": "Explora nuestro Portafolio de Aplicaciones",
+          "portfolio.apps_intro_text": "Bienvenido a nuestro portafolio de aplicaciones, donde podrás descubrir una amplia variedad de proyectos que han sido desarrollados con pasión y dedicación. Nuestro portafolio abarca una amplia gama de aplicaciones que destacan en diferentes áreas, desde sitios web personalizados y tiendas virtuales, hasta aplicaciones móviles innovadoras.",
+          "portfolio.app1_title": "EasyPay",
+          "portfolio.app1_text": "EasyPay es una innovadora aplicación de pasarela de pago que simplifica tus transacciones en línea. Con su interfaz intuitiva y altos estándares de seguridad, podrás realizar pagos de manera rápida y segura, brindando una experiencia sin complicaciones para tus compras en línea.",
+          "portfolio.app1_caption": "Tu Aliado para Pagos Rápidos y Seguros",
+          "portfolio.app2_title": "DataDash",
+          "portfolio.app2_text": "DataDash es una aplicación de dashboard intuitiva y poderosa que te permite monitorear y analizar tus datos en tiempo real. Obtén información clave y toma decisiones informadas de manera rápida y eficiente.",
+          "portfolio.app2_caption": "Tu centro de control inteligente para visualizar datos",
+          "portfolio.app3_title": "InventoTrack",
+          "portfolio.app3_text": "InventoTrack es una potente aplicación de gestión de inventario que te permite tener un control preciso de tus productos y realizar un seguimiento eficiente de tus existencias. Optimiza tus operaciones y maximiza tu eficiencia con esta herramienta intuitiva y práctica.",
+          "portfolio.app3_caption": "Controla y optimiza tus inventarios con facilidad",
+          "portfolio.app4_title": "TotemFlow",
+          "portfolio.app4_text": "TotemFlow es una aplicación de autoatención que transforma la forma en que tus clientes interactúan con tu negocio. Con una interfaz intuitiva y funciones avanzadas, permite a los usuarios realizar transacciones, obtener información y acceder a servicios de manera rápida y autónoma. Optimiza tus procesos, mejora la satisfacción del cliente y potencia tu negocio con TotemFlow.",
+          "portfolio.app4_caption": "La solución innovadora para la autoatención de tus clientes",
+          /** CONTACTO **/
+          "contacto_title":"Contacto | Envíanos tus consultas y oportunidades laborales",
+          "contact.title": "Contáctame para una consulta",
+          "contact.placeholderName": "Nombre Completo",
+          "contact.placeholderEmail": "Email",
+          "contact.placeholderSubject": "Asunto",
+          "contact.placeholderMessage": "Mensaje",
+          "contact.buttonSend": "Enviar",
+        }
+      }
+    }
+  },
+  function (err, t) {
+    // El i18next está listo para ser utilizado
+    updateTranslations(t);
+  }
+);
+
+// Función para actualizar los elementos traducibles del DOM
+function updateTranslations(t) {
+  const elementsToTranslate = document.querySelectorAll("[data-i18n]");
+  elementsToTranslate.forEach((element) => {
+    const key = element.dataset.i18n;
+    const options = element.dataset.i18nOptions ? JSON.parse(element.dataset.i18nOptions) : null;
+
+    if (options) {
+      element.textContent = t(key, options);
+    } else {
+      element.textContent = t(key);
+    }
+  });
+}
+
+// Función para cambiar al idioma seleccionado
+function switchLanguage(language) {
+  i18next.changeLanguage(language, function (err, t) {
+    updateTranslations(t);
+  });
+}
+
+// Evento click para cambiar al idioma inglés
+document.getElementById("btn-en").addEventListener("click", () => switchLanguage("en"));
+
+// Evento click para cambiar al idioma español
+document.getElementById("btn-es").addEventListener("click", () => switchLanguage("es"));
+
+// Carga el idioma actual al cargar la página
+document.addEventListener("DOMContentLoaded", function () {
+  const currentLanguage = localStorage.getItem("language") || "en";
+  switchLanguage(currentLanguage);
+});

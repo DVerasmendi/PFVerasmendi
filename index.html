@@ -33,7 +33,9 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <title>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.6/dist/umd/i18next.min.js"></script>
+
+    <title data-i18n="title">
       Desarrollo web a medida y aplicaciones innovadoras | Impulsa tu negocio
     </title>
   </head>
@@ -45,11 +47,25 @@
     />
     <header class="header">
       <div id="div_titulo_main">
-        <a href="./index.html">
+        <a href="./index.html" id="a_title">
           <img
             id="main_logo"
             src="/static/img/logo.png"
             alt="Logo DDB Web Studio"
+          />
+        </a>
+        <a id="btn-en">
+          <img
+            class="img_idioma"
+            src="/static/img/usa.png"
+            alt="idioma_english"
+          />
+        </a>
+        <a id="btn-es">
+          <img
+            class="img_idioma"
+            src="/static/img/esp.png"
+            alt="idioma_espanish"
           />
         </a>
       </div>
@@ -64,29 +80,48 @@
       <nav class="navsito">
         <ul class="navsito__list">
           <li class="navsito__item">
-            <a class="navsito__link" href="./index.html">Home</a>
+            <a class="navsito__link" href="./index.html" data-i18n="home"
+              >Home</a
+            >
           </li>
           <li class="navsito__item">
-            <a class="navsito__link" href="./views/conoceme.html">Conóceme</a>
+            <a
+              class="navsito__link"
+              href="./views/conoceme.html"
+              data-i18n="about"
+              >Conóceme</a
+            >
           </li>
           <li class="navsito__item">
-            <a class="navsito__link" href="./views/servicios.html">Servicios</a>
+            <a
+              class="navsito__link"
+              href="./views/servicios.html"
+              data-i18n="services"
+              >Servicios</a
+            >
           </li>
           <li class="navsito__item">
-            <a class="navsito__link" href="./views/portafolio_apps.html"
+            <a
+              class="navsito__link"
+              href="./views/portafolio_apps.html"
+              data-i18n="portfolio"
               >Portafolio</a
             >
           </li>
           <li class="navsito__item">
-            <a class="navsito__link" href="./views/contacto.html">Contacto</a>
+            <a
+              class="navsito__link"
+              href="./views/contacto.html"
+              data-i18n="contact"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
     </header>
-
     <div class="container">
       <div id="parrafo_inicial_1" class="texto1">
-        <p class="texto1__parrafo">
+        <p class="texto1__parrafo" data-i18n="intro_paragraph">
           Impulsando tu presencia en línea y construyendo experiencias digitales
           excepcionales
         </p>
@@ -131,14 +166,10 @@
           <source src="./static/img/imagen1.mp4" type="video/mp4" />
           Tu navegador no admite el elemento de video.
         </video>
-        <!-- <img
-          src="/static/img/imagen2.jpg"
-          alt="Imagen Oculta"
-          class="imagen2_laptops"
-        /> -->
+        <!-- <img src="/static/img/imagen2.jpg" alt="Imagen Oculta" class="imagen2_laptops" /> -->
       </div>
       <div id="parrafo_inicial_2" class="texto2">
-        <p class="texto2__parrafo">
+        <p class="texto2__parrafo" data-i18n="development_paragraph">
           Desarrollo web a medida y aplicaciones innovadoras para impulsar tu
           negocio, servicios integrales y mejoras frontend/backend de vanguardia
         </p>
@@ -161,10 +192,10 @@
           class="paragraph__image paragraph__image_oculto"
           id="imagen2_parrafo1"
         />
-        <h3 class="paragraph__title">
+        <h3 class="paragraph__title" data-i18n="transform_title">
           Transformando ideas en realidad digital
         </h3>
-        <p class="paragraph__text">
+        <p class="paragraph__text" data-i18n="transform_description">
           Desarrollo web personalizado y creación de aplicaciones para potenciar
           tu presencia en línea
         </p>
@@ -182,8 +213,10 @@
           class="paragraph__image paragraph__image_oculto"
           id="imagen2_parrafo2"
         />
-        <h3 class="paragraph__title">Tu éxito en la web, nuestra pasión</h3>
-        <p class="paragraph__text">
+        <h3 class="paragraph__title" data-i18n="success_title">
+          Tu éxito en la web, nuestra pasión
+        </h3>
+        <p class="paragraph__text" data-i18n="success_description">
           Desarrollo web profesional, servicios completos y mejoras de última
           generación
         </p>
@@ -201,8 +234,10 @@
           class="paragraph__image paragraph__image_oculto"
           id="imagen2_parrafo3"
         />
-        <h3 class="paragraph__title">Soluciones integrales</h3>
-        <p class="paragraph__text">
+        <h3 class="paragraph__title" data-i18n="solutions_title">
+          Soluciones integrales
+        </h3>
+        <p class="paragraph__text" data-i18n="solutions_description">
           Somos expertos en el desarrollo web y la creación de apps adaptadas a
           tus necesidades
         </p>
@@ -212,20 +247,31 @@
     <div class="content-center">
       <div class="text-container-left">
         <h2 class="text-container-left__title">
-          <strong>Convierte tus ideas en acción con un click</strong>
+          <strong data-i18n="ideas_title"
+            >Convierte tus ideas en acción con un click</strong
+          >
         </h2>
-        <p id="p_conviert_ideas_index" class="text-container-left__description">
+        <p
+          id="p_conviert_ideas_index"
+          class="text-container-left__description"
+          data-i18n="ideas_description"
+        >
           En DDB Web Studio, nos dedicamos apasionadamente a transformar ideas
           en soluciones digitales innovadoras. Nuestro enfoque se centra en el
           desarrollo web personalizado y la creación de aplicaciones que se
           adaptan a las necesidades únicas de nuestros clientes.
         </p>
-        <button id="mostrarBtn_conviert_ideas_index" class="botones_parrafos">
+        <button
+          id="mostrarBtn_conviert_ideas_index"
+          class="botones_parrafos"
+          data-i18n="show_more"
+        >
           Mostrar Más
         </button>
         <button
           id="mostrarMenosBtn_conviert_ideas_index"
           class="botones_parrafos"
+          data-i18n="show_less"
         >
           Mostrar Menos
         </button>
@@ -244,7 +290,7 @@
     <!-- Parrafo -->
     <div class="outer-container">
       <div class="inner-container">
-        <p id="p_conviert_ideas_index_2">
+        <p id="p_conviert_ideas_index_2" data-i18n="focus_description">
           Con un enfoque meticuloso en el diseño y la funcionalidad, trabajamos
           para proporcionar experiencias digitales atractivas y funcionales.
           Desde la creación de sitios web personalizados que reflejen la
@@ -252,12 +298,17 @@
           vanguardia que impulsen la interacción con tus clientes, nuestro
           objetivo es ayudarte a alcanzar el éxito en línea.
         </p>
-        <button id="mostrarBtn_conviert_ideas_index_2" class="botones_parrafos">
+        <button
+          id="mostrarBtn_conviert_ideas_index_2"
+          class="botones_parrafos"
+          data-i18n="show_more"
+        >
           Mostrar Más
         </button>
         <button
           id="mostrarMenosBtn_conviert_ideas_index_2"
           class="botones_parrafos"
+          data-i18n="show_less"
         >
           Mostrar Menos
         </button>
@@ -266,7 +317,7 @@
 
     <!-- EN RESUMEN -->
     <div class="main-container">
-      <p class="main-container__text">
+      <p class="main-container__text" data-i18n="summary_title">
         Transformamos ideas en soluciones digitales exitosas.
       </p>
       <div id="div_principal_en_resumen" class="div_principal_en_resumen">
@@ -275,13 +326,20 @@
             <a href="/views/conoceme.html">
               <img src="/static/img/conoceme.jpg" alt="Imagen 1" />
             </a>
-            <h3 class="main-container__image-section-title">Conóceme</h3>
+            <h3 class="main-container__image-section-title" data-i18n="about">
+              Conóceme
+            </h3>
           </div>
           <div id="menu_2" class="main-container__image-section">
             <a href="/views/servicios.html">
               <img src="/static/img/servicios.jpg" alt="Imagen 2" />
             </a>
-            <h3 class="main-container__image-section-title">Servicios</h3>
+            <h3
+              class="main-container__image-section-title"
+              data-i18n="services"
+            >
+              Servicios
+            </h3>
           </div>
         </div>
 
@@ -290,13 +348,20 @@
             <a href="/views/portafolio_apps.html">
               <img src="/static/img/port_apps_3.png" alt="Imagen 3" />
             </a>
-            <h3 class="main-container__image-section-title">Portafolio</h3>
+            <h3
+              class="main-container__image-section-title"
+              data-i18n="portfolio"
+            >
+              Portafolio
+            </h3>
           </div>
           <div id="menu_4" class="main-container__image-section">
             <a href="/views/contacto.html">
               <img src="/static/img/contacto.jpg" alt="Imagen 4" />
             </a>
-            <h3 class="main-container__image-section-title">Contacto</h3>
+            <h3 class="main-container__image-section-title" data-i18n="contact">
+              Contacto
+            </h3>
           </div>
         </div>
       </div>
@@ -305,14 +370,19 @@
     <!-- UNETE a MI LISTA-->
     <div class="main-containers">
       <div class="main-containers__left-container">
-        <h2 class="main-containers__left-title">DDB Web Studio</h2>
-        <p class="main-containers__left-paragraph">
+        <h2 class="main-containers__left-title" data-i18n="ddb_studio">
+          DDB Web Studio
+        </h2>
+        <p class="main-containers__left-paragraph" data-i18n="contact_me">
           Si deseas concertar una entrevista o contactarme para oportunidades
           laborales, estaré encantado de recibir tu mensaje.
         </p>
       </div>
       <div class="main-containers__right-container">
-        <h2 class="main-containers__right-title">
+        <h2
+          class="main-containers__right-title"
+          data-i18n="contact_opportunities"
+        >
           ¡Contáctame para oportunidades laborales!
         </h2>
         <form class="main-containers__right-form" method="POST">
@@ -329,9 +399,14 @@
           <input
             type="text"
             class="main-containers__right-input formulario__textarea_chiquis"
-            placeholder="Texto"
+            placeholder="Mensaje"
           />
-          <button type="submit" class="main-containers__right-button" disabled>
+          <button
+            type="submit"
+            class="main-containers__right-button"
+            disabled
+            data-i18n="send"
+          >
             Enviar
           </button>
         </form>
@@ -369,9 +444,9 @@
             <img src="/static/img/email.png" alt="Correo Electrónico" />
           </a>
         </div>
-        <p class="footer__text">
-          Santiago de Chile, © 2023 All rights reserved. DDB Web Studio.
-          Designed by DDB Web Studio
+        <p class="footer__text" data-i18n="footer_text">
+          Santiago de Chile, © 2023 Todos los derechos reservados. DDB Web
+          Studio. Diseñado por DDB Web Studio
         </p>
       </div>
     </footer>
@@ -386,6 +461,6 @@
         class="whatsapp-logo"
       />
     </a>
+    <script src="/js/style.js"></script>
   </body>
 </html>
-<script src="/js/style.js"></script>
